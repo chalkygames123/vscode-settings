@@ -1,0 +1,55 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+alt+d",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "ctrl+alt+y",
+    "command": "editor.emmet.action.evaluateMathExpression"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "cmd+r r",
+    "command": "workbench.action.tasks.reRunTask"
+  },
+  {
+    "key": "cmd+r shift+r",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "cmd+r shift+l",
+    "command": "workbench.action.tasks.showLog"
+  },
+  {
+    "key": "cmd+r shift+x",
+    "command": "workbench.action.tasks.terminate"
+  },
+  {
+    "key": "cmd+r t",
+    "command": "workbench.action.tasks.test"
+  }
+]

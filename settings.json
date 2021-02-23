@@ -1,0 +1,29 @@
+{
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.renderSideBySide": true,
+  "editor.autoIndent": "advanced",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.minimap.showSlider": "always",
+  "editor.parameterHints.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "files.associations": {
+    "*.njk": "html"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "html.autoClosingTags": false,
+  "sync.autoDownload": true,
+  "sync.gist": "a9eb39c2b3ecc7083a93029315c9f133",
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "hidden",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.startupEditor": "none"
+}
