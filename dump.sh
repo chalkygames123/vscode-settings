@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" || return
 
-code --list-extensions > extensions.json
+code --list-extensions > extensions

@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")" || return
 
-< extensions.json xargs -I {} code --install-extension {}
+< extensions xargs -I {} code --install-extension {}
 
 VSCODE_DIR=~/Library/Application\ Support/Code/User
 
