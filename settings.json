@@ -17,8 +17,6 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "html.autoClosingTags": false,
-  "sync.autoDownload": true,
-  "sync.gist": "a9eb39c2b3ecc7083a93029315c9f133",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
