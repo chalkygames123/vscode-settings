@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Make sure you have `code` command installed. If not, run `Shell Command: install 'code' command in PATH` command in VS Code.
+Make sure you have the `code` command installed. If not, run the command `Shell Command: install 'code' command in PATH` from the Command Palette in VS Code.
 
 ## Scripts
 
