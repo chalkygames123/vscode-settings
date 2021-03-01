@@ -2,11 +2,13 @@
 
 cd "$(dirname "$0")" || return
 
-SETTINGS_DIR=settings
-VSCODE_DIR=~/Library/Application\ Support/Code/User
+SOURCE_DIR=settings
+TARGET_DIR=~/Library/Application\ Support/Code/User
 
 set -o xtrace
 
-ln -fs "$PWD/$SETTINGS_DIR/keybindings.json" "$VSCODE_DIR"
-ln -fs "$PWD/$SETTINGS_DIR/settings.json" "$VSCODE_DIR"
-ln -fs "$PWD/$SETTINGS_DIR/snippets" "$VSCODE_DIR"
+ln -fs \
+  "$PWD/$SOURCE_DIR/keybindings.json" \
+  "$PWD/$SOURCE_DIR/settings.json" \
+  "$PWD/$SOURCE_DIR/snippets" \
+  "$TARGET_DIR"
