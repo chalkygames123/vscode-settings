@@ -9,7 +9,6 @@
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
   "editor.minimap.showSlider": "always",
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
