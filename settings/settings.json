@@ -15,9 +15,6 @@
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "emmet.triggerExpansionOnTab": true,
-  "files.associations": {
-    "*.njk": "html"
-  },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "html.autoClosingTags": false,
