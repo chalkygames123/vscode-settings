@@ -4,4 +4,4 @@ cd "$(dirname "$0")" || return
 
 set -o xtrace
 
-< extensions xargs -I {} -P 0 code --install-extension {}
+code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//' | xargs -I {} -P 0 code --install-extension {}
