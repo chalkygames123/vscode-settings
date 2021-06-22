@@ -5,8 +5,6 @@ cd "$(dirname "$0")" || return
 SOURCE_DIR=settings
 TARGET_DIR=~/Library/Application\ Support/Code/User
 
-set -o xtrace
-
 mkdir -p "$TARGET_DIR"
 
 ln -fs \
