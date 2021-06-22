@@ -2,4 +2,30 @@
 
 cd "$(dirname "$0")" || return
 
-code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//' | xargs -I {} -P 0 code --uninstall-extension {}
+DRYRUN=0
+
+while (( $# )); do
+  case $1 in
+    --dry-run | -n)
+    DRYRUN=1
+    shift
+    ;;
+    --* | -*)
+    echo "error: unknown option '$1'" >&2
+    exit 1
+    ;;
+    *)
+    shift
+    ;;
+  esac
+done
+
+EXTENSIONS_TO_UNINSTALL=$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
+
+if [[ $DRYRUN == 1 ]]; then
+  for extension in $EXTENSIONS_TO_UNINSTALL; do
+    echo "Would uninstall $extension"
+  done
+else
+  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} -P 0 code --uninstall-extension {}
+fi
