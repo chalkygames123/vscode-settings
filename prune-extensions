@@ -23,9 +23,7 @@ done
 EXTENSIONS_TO_UNINSTALL=$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
 
 if [[ $DRYRUN == 1 ]]; then
-  for extension in $EXTENSIONS_TO_UNINSTALL; do
-    echo "Would uninstall $extension"
-  done
+  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} echo "Would uninstall {}"
 else
   echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} -P 0 code --uninstall-extension {}
 fi
