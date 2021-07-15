@@ -16,7 +16,7 @@
   "editor.tabSize": 2,
   "emmet.triggerExpansionOnTab": true,
   "files.associations": {
-    "*.html": "html"
+    "*.njk": "html"
   },
   "files.eol": "\n",
   "files.insertFinalNewline": true,
