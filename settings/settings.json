@@ -4,6 +4,7 @@
   },
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
+  "editor.autoClosingDelete": "always",
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
