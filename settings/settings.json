@@ -33,6 +33,5 @@
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
   "workbench.editor.closeOnFileDelete": false,
-  "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.startupEditor": "none"
 }
