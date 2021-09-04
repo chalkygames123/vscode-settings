@@ -19,6 +19,7 @@
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
+  "editor.suggest.preview": true,
   "editor.suggestOnTriggerCharacters": false,
   "editor.tabSize": 2,
   "emmet.triggerExpansionOnTab": true,
