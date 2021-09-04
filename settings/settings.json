@@ -6,6 +6,7 @@
   "diffEditor.renderSideBySide": true,
   "editor.autoClosingDelete": "always",
   "editor.autoIndent": "advanced",
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
