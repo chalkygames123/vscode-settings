@@ -8,5 +8,5 @@ Make sure you have the `code` command installed. If not, run the command `Shell 
 
 - Run `./dump-extensions` to backup extensions
 - Run `./install-extensions` to install extensions from the backup
-- Run `./prune-extensions` to prune extensions that are not included in the backup (Use `-n` or `--dry-run` option to dry run)
+- Run `./prune-extensions` to prune extensions that are not included in the backup (Prepend `DRY_RUN=1 ` to dry run)
 - Run `./link` to symlink settings from the backup to the VS Code's user settings file location
