@@ -6,7 +6,7 @@
   "editor.autoClosingDelete": "always",
   "editor.autoIndent": "advanced",
   "editor.bracketPairColorization.enabled": true,
-  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
+  "editor.codeActionsOnSave": ["source.fixAll"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
