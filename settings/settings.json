@@ -28,8 +28,6 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "html.autoClosingTags": false,
-  "search.searchEditor.defaultNumberOfContextLines": null,
-  "search.searchEditor.reusePriorSearchConfiguration": true,
   "terminal.integrated.defaultLocation": "editor",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
