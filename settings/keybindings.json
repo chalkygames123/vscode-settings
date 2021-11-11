@@ -35,5 +35,10 @@
   {
     "key": "cmd+r t",
     "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "cmd+h",
+    "command": "-testing.toggleTestingPeekHistory",
+    "when": "testing.isPeekVisible"
   }
 ]
