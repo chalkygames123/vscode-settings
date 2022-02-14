@@ -26,7 +26,6 @@
     "*.njk": "html"
   },
   "files.eol": "\n",
-  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "html.autoClosingTags": false,
   "terminal.integrated.defaultLocation": "editor",
