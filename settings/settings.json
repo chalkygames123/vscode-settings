@@ -17,6 +17,7 @@
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
   "editor.suggest.preview": true,
   "editor.tabSize": 2,
   "emmet.triggerExpansionOnTab": true,
