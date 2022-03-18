@@ -21,6 +21,10 @@
     "command": "editor.emmet.action.matchTag"
   },
   {
+    "key": "ctrl+shift+[Minus]",
+    "command": "workbench.action.navigateForward"
+  },
+  {
     "key": "cmd+r r",
     "command": "workbench.action.tasks.reRunTask"
   },
