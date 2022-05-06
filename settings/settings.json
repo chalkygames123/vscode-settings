@@ -29,6 +29,7 @@
   "git.closeDiffOnOperation": true,
   "html.autoClosingTags": false,
   "terminal.integrated.defaultLocation": "editor",
+  "window.confirmBeforeClose": "keyboardOnly",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
