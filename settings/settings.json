@@ -37,7 +37,6 @@
   "window.confirmBeforeClose": "keyboardOnly",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
-  "window.newWindowDimensions": "maximized",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
