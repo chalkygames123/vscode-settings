@@ -13,7 +13,6 @@
   "editor.guides.bracketPairs": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.minimap.showSlider": "always",
-  "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "top",
   "editor.suggest.preview": true,
@@ -38,6 +37,5 @@
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
-  "workbench.editor.closeOnFileDelete": false,
   "workbench.startupEditor": "none"
 }
