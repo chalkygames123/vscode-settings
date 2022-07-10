@@ -13,7 +13,6 @@
   "editor.guides.bracketPairs": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.minimap.showSlider": "always",
-  "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "top",
