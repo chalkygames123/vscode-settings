@@ -32,7 +32,6 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
-  "terminal.integrated.defaultLocation": "editor",
   "window.confirmBeforeClose": "keyboardOnly",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
