@@ -6,7 +6,6 @@ esbenp.prettier-vscode
 GitHub.github-vscode-theme
 GitHub.remotehub
 jock.svg
-johnsoncodehk.volar
 jrebocho.vscode-random
 mrmlnc.vscode-scss
 ms-vscode-remote.remote-containers
@@ -16,5 +15,6 @@ octref.vetur
 shardulm94.trailing-spaces
 sleistner.vscode-fileutils
 stylelint.vscode-stylelint
+Vue.volar
 WakaTime.vscode-wakatime
 wmaurer.change-case
