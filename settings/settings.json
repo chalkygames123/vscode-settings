@@ -12,6 +12,7 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.inlineSuggest.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "top",
