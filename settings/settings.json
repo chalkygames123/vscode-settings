@@ -27,7 +27,6 @@
   "files.eol": "\n",
   "files.trimFinalNewlines": true,
   "git.closeDiffOnOperation": true,
-  "git.mergeEditor": true,
   "html.autoClosingTags": false,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
