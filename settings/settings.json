@@ -6,6 +6,8 @@
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": ["source.fixAll"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.experimental.stickyScroll.enabled": true,
+  "editor.experimental.useCustomCodeActionMenu": true,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -47,6 +49,7 @@
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
+  "workbench.experimental.editSessions.enabled": true,
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.startupEditor": "none"
