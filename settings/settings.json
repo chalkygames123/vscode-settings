@@ -40,11 +40,14 @@
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
   "redhat.telemetry.enabled": true,
+  "window.autoDetectColorScheme": true,
   "window.confirmBeforeClose": "keyboardOnly",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "hidden",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.startupEditor": "none"
 }
