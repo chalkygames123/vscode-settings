@@ -29,9 +29,9 @@
   "git.closeDiffOnOperation": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
+    "markdown": true,
     "plaintext": true,
-    "markdown": true
+    "yaml": true
   },
   "html.autoClosingTags": false,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
