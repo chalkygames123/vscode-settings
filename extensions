@@ -7,6 +7,7 @@ EditorConfig.EditorConfig
 esbenp.prettier-vscode
 GitHub.github-vscode-theme
 GitHub.remotehub
+GitHub.vscode-pull-request-github
 html-validate.vscode-html-validate
 jock.svg
 mrmlnc.vscode-scss
