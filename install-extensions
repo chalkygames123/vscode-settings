@@ -4,6 +4,10 @@ cd "$(dirname "$0")" || return
 
 EXTENSIONS_TO_INSTALL=$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')
 
+if [[ -z $EXTENSIONS_TO_INSTALL ]]; then
+  echo "Nothing to install"
+fi
+
 if [[ $DRY_RUN == 1 ]]; then
   echo "$EXTENSIONS_TO_INSTALL" | xargs -I {} echo "Would install {}"
 else
