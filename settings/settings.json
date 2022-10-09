@@ -54,5 +54,5 @@
   "workbench.colorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "readme"
 }
