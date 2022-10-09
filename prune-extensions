@@ -5,11 +5,11 @@ cd "$(dirname "$0")" || return
 EXTENSIONS_TO_UNINSTALL=$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
 
 if [[ -z $EXTENSIONS_TO_UNINSTALL ]]; then
-  echo "Nothing to uninstall"
+  echo 'Nothing to uninstall'
 fi
 
 if [[ $DRY_RUN == 1 ]]; then
-  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} echo "Would uninstall {}"
+  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} echo 'Would uninstall {}'
 else
   echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} -P 0 code --uninstall-extension {}
 fi
