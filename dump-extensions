@@ -2,4 +2,20 @@
 
 cd "$(dirname "$0")" || return
 
-code --list-extensions > extensions
+INSTALLED_EXTENSIONS=$(code --list-extensions)
+
+if echo "$INSTALLED_EXTENSIONS" | cmp -s extensions -; then
+  echo 'Already up-to-date'
+else
+  ADDED_EXTENSIONS=$(echo "$INSTALLED_EXTENSIONS" | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
+  REMOVED_EXTENSIONS=$(echo "$INSTALLED_EXTENSIONS" | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')
+
+  ADDED_EXTENSIONS_COUNT=$(echo "$ADDED_EXTENSIONS" | wc -l | tr -d '[:space:]')
+  REMOVED_EXTENSIONS_COUNT=$(echo "$REMOVED_EXTENSIONS" | wc -l | tr -d '[:space:]')
+
+  [[ -n $ADDED_EXTENSIONS ]] && echo -e "Added $ADDED_EXTENSIONS_COUNT extension$([[ ADDED_EXTENSIONS_COUNT -gt 1 ]] && echo 's'):\n$ADDED_EXTENSIONS"
+  [[ -n $ADDED_EXTENSIONS && -n $REMOVED_EXTENSIONS ]] && echo
+  [[ -n $REMOVED_EXTENSIONS ]] && echo -e "Removed $REMOVED_EXTENSIONS_COUNT extension$([[ REMOVED_EXTENSIONS_COUNT -gt 1 ]] && echo 's'):\n$REMOVED_EXTENSIONS"
+
+  echo "$INSTALLED_EXTENSIONS" > extensions
+fi
