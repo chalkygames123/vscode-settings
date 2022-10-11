@@ -2,6 +2,7 @@
   "[html]": {
     "editor.formatOnSave": false
   },
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoClosingDelete": "always",
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
