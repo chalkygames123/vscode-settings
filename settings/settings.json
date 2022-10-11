@@ -33,12 +33,6 @@
   "files.trimFinalNewlines": true,
   "git.closeDiffOnOperation": true,
   "git.mergeEditor": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "plaintext": true,
-    "yaml": true
-  },
   "html.autoClosingTags": false,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
