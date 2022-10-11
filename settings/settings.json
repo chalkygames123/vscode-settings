@@ -10,7 +10,6 @@
     "source.fixAll.stylelint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.experimental.useCustomCodeActionMenu": true,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
