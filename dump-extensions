@@ -2,20 +2,49 @@
 
 cd "$(dirname "$0")" || return
 
-INSTALLED_EXTENSIONS=$(code --list-extensions)
+declare installed_extensions
+installed_extensions="$(code --list-extensions)"
+readonly installed_extensions
 
-if echo "$INSTALLED_EXTENSIONS" | cmp -s extensions -; then
+if echo "$installed_extensions" | cmp -s extensions -; then
   echo 'Already up-to-date'
 else
-  ADDED_EXTENSIONS=$(echo "$INSTALLED_EXTENSIONS" | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
-  REMOVED_EXTENSIONS=$(echo "$INSTALLED_EXTENSIONS" | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')
+  declare -a results
 
-  ADDED_EXTENSIONS_COUNT=$(echo "$ADDED_EXTENSIONS" | wc -l | tr -d '[:space:]')
-  REMOVED_EXTENSIONS_COUNT=$(echo "$REMOVED_EXTENSIONS" | wc -l | tr -d '[:space:]')
+  declare added_extensions
+  added_extensions="$(echo "$installed_extensions" | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
+  readonly added_extensions
 
-  [[ -n $ADDED_EXTENSIONS ]] && echo -e "Added $ADDED_EXTENSIONS_COUNT extension$([[ ADDED_EXTENSIONS_COUNT -gt 1 ]] && echo 's'):\n$ADDED_EXTENSIONS"
-  [[ -n $ADDED_EXTENSIONS && -n $REMOVED_EXTENSIONS ]] && echo
-  [[ -n $REMOVED_EXTENSIONS ]] && echo -e "Removed $REMOVED_EXTENSIONS_COUNT extension$([[ REMOVED_EXTENSIONS_COUNT -gt 1 ]] && echo 's'):\n$REMOVED_EXTENSIONS"
+  if [[ -n $added_extensions ]]; then
+    declare added_extensions_count
+    added_extensions_count="$(echo "$added_extensions" | wc -l | tr -d '[:space:]')"
+    readonly added_extensions_count
 
-  echo "$INSTALLED_EXTENSIONS" > extensions
+    results+=("$(
+      echo "Added $added_extensions_count extension$([[ added_extensions_count -gt 1 ]] && printf 's'):"
+      echo "$added_extensions"
+    )")
+  fi
+
+  declare removed_extensions
+  removed_extensions="$(echo "$installed_extensions" | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
+  readonly removed_extensions
+
+  if [[ -n $removed_extensions ]]; then
+    declare removed_extensions_count
+    removed_extensions_count="$(echo "$removed_extensions" | wc -l | tr -d '[:space:]')"
+    readonly removed_extensions_count
+
+    results+=("$(
+      echo "Removed $removed_extensions_count extension$([[ removed_extensions_count -gt 1 ]] && printf 's'):"
+      echo "$removed_extensions"
+    )")
+  fi
+
+  readonly results
+
+  printf '%b\n' "${results[0]}"
+  printf '\n%b\n' "${results[@]:1}"
+
+  echo "$installed_extensions" > extensions
 fi

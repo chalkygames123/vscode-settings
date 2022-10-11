@@ -2,14 +2,16 @@
 
 cd "$(dirname "$0")" || return
 
-EXTENSIONS_TO_UNINSTALL=$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')
+declare extensions_to_uninstall
+extensions_to_uninstall="$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
+readonly extensions_to_uninstall
 
-if [[ -z $EXTENSIONS_TO_UNINSTALL ]]; then
+if [[ -z $extensions_to_uninstall ]]; then
   echo 'Nothing to uninstall'
 fi
 
 if [[ $DRY_RUN == 1 ]]; then
-  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} echo 'Would uninstall {}'
+  echo "$extensions_to_uninstall" | xargs -I {} echo 'Would uninstall {}'
 else
-  echo "$EXTENSIONS_TO_UNINSTALL" | xargs -I {} -P 0 code --uninstall-extension {}
+  echo "$extensions_to_uninstall" | xargs -I {} -P 0 code --uninstall-extension {}
 fi

@@ -2,14 +2,16 @@
 
 cd "$(dirname "$0")" || return
 
-EXTENSIONS_TO_INSTALL=$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')
+declare extensions_to_install
+extensions_to_install="$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
+readonly extensions_to_install
 
-if [[ -z $EXTENSIONS_TO_INSTALL ]]; then
+if [[ -z $extensions_to_install ]]; then
   echo 'Nothing to install'
 fi
 
 if [[ $DRY_RUN == 1 ]]; then
-  echo "$EXTENSIONS_TO_INSTALL" | xargs -I {} echo 'Would install {}'
+  echo "$extensions_to_install" | xargs -I {} echo 'Would install {}'
 else
-  echo "$EXTENSIONS_TO_INSTALL" | xargs -I {} -P 0 code --install-extension {}
+  echo "$extensions_to_install" | xargs -I {} -P 0 code --install-extension {}
 fi

@@ -2,8 +2,8 @@
 
 cd "$(dirname "$0")" || return
 
-SOURCE_DIR=settings
-TARGET_DIR=~/Library/Application\ Support/Code/User
+declare -r SOURCE_DIR='settings'
+declare -r TARGET_DIR="$HOME/Library/Application Support/Code/User"
 
 mkdir -p "$TARGET_DIR"
 
