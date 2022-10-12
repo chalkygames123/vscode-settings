@@ -2,6 +2,7 @@ astro-build.astro-vscode
 bradlc.vscode-tailwindcss
 dbaeumer.vscode-eslint
 deerawan.vscode-faker
+eamodio.gitlens
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
 GitHub.github-vscode-theme
