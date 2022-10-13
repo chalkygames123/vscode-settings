@@ -3,48 +3,40 @@
 cd "$(dirname "$0")" || return
 
 declare installed_extensions
+declare added_extensions
+declare added_extensions_count
+declare removed_extensions
+declare removed_extensions_count
+
 installed_extensions="$(code --list-extensions)"
 readonly installed_extensions
 
 if echo "$installed_extensions" | cmp -s extensions -; then
   echo 'Already up-to-date'
 else
-  declare -a results
-
-  declare added_extensions
   added_extensions="$(echo "$installed_extensions" | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
   readonly added_extensions
 
-  if [[ -n $added_extensions ]]; then
-    declare added_extensions_count
-    added_extensions_count="$(echo "$added_extensions" | wc -l | tr -d '[:space:]')"
-    readonly added_extensions_count
-
-    results+=("$(
-      echo "Added $added_extensions_count extension$([[ added_extensions_count -gt 1 ]] && printf 's'):"
-      echo "$added_extensions"
-    )")
-  fi
-
-  declare removed_extensions
   removed_extensions="$(echo "$installed_extensions" | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
   readonly removed_extensions
 
+  if [[ -n $added_extensions ]]; then
+    added_extensions_count="$(echo "$added_extensions" | wc -l | tr -d '[:space:]')"
+    readonly added_extensions_count
+
+    echo "Added $added_extensions_count extension$([[ added_extensions_count -gt 1 ]] && printf 's'):"
+    echo "$added_extensions"
+  fi
+
+  [[ -n $added_extensions && -n $removed_extensions ]] && printf '\n'
+
   if [[ -n $removed_extensions ]]; then
-    declare removed_extensions_count
     removed_extensions_count="$(echo "$removed_extensions" | wc -l | tr -d '[:space:]')"
     readonly removed_extensions_count
 
-    results+=("$(
-      echo "Removed $removed_extensions_count extension$([[ removed_extensions_count -gt 1 ]] && printf 's'):"
-      echo "$removed_extensions"
-    )")
+    echo "Removed $removed_extensions_count extension$([[ removed_extensions_count -gt 1 ]] && printf 's'):"
+    echo "$removed_extensions"
   fi
-
-  readonly results
-
-  echo "${results[0]}"
-  [[ ${results[1]} ]] && printf '\n%s\n' "${results[@]:1}"
 
   echo "$installed_extensions" > extensions
 fi
