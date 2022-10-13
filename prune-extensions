@@ -3,6 +3,7 @@
 cd "$(dirname "$0")" || return
 
 declare extensions_to_uninstall
+
 extensions_to_uninstall="$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
 readonly extensions_to_uninstall
 
