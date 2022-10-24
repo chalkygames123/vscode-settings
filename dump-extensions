@@ -12,7 +12,7 @@ installed_extensions="$(code --list-extensions)"
 readonly installed_extensions
 
 if echo "$installed_extensions" | cmp -s extensions -; then
-  echo 'Already up-to-date'
+  echo 'Already up to date'
 else
   added_extensions="$(echo "$installed_extensions" | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
   readonly added_extensions
