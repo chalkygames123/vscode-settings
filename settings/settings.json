@@ -2,7 +2,6 @@
   "[html]": {
     "editor.formatOnSave": false
   },
-  "editor.autoClosingDelete": "always",
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
