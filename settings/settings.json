@@ -15,6 +15,7 @@
   "editor.guides.bracketPairs": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
   "editor.minimap.showSlider": "always",
   "editor.renderWhitespace": "all",
   "editor.stickyScroll.enabled": true,
