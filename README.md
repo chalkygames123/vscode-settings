@@ -6,7 +6,7 @@ Make sure you have the `code` command installed. If not, run the command `Shell 
 
 ## Usage
 
-- Run `./dump-extensions` to backup extensions
+- Run `./dump-extensions` to back up your extensions
 - Run `./install-extensions` to install extensions from the backup
   - Run `DRY_RUN=1 ./install-extensions` instead to do a dry run
 - Run `./prune-extensions` to prune extensions that are not included in the backup
