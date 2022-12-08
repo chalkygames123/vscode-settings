@@ -2,7 +2,25 @@
 
 cd "$(dirname "$0")" || return
 
+declare -i dry_run=0
 declare extensions_to_install
+
+while (( $# )); do
+  case $1 in
+    --dry-run | -n)
+    dry_run=1
+    readonly dry_run
+    shift
+    ;;
+    --* | -*)
+    echo "error: unknown option '$1'" >&2
+    exit 1
+    ;;
+    *)
+    shift
+    ;;
+  esac
+done
 
 extensions_to_install="$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
 readonly extensions_to_install
@@ -11,7 +29,7 @@ if [[ -z $extensions_to_install ]]; then
   echo 'Nothing to install'
 fi
 
-if [[ $DRY_RUN == 1 ]]; then
+if [[ $dry_run == 1 ]]; then
   echo "$extensions_to_install" | xargs -I {} echo 'Would install {}'
 else
   echo "$extensions_to_install" | xargs -I {} -P 0 code --install-extension {}
