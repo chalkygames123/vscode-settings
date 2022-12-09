@@ -8,7 +8,6 @@
     "source.fixAll.stylelint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.find.cursorMoveOnType": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
