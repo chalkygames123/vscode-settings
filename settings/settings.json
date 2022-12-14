@@ -2,6 +2,7 @@
   "[html]": {
     "editor.formatOnSave": false
   },
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
