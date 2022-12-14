@@ -31,5 +31,12 @@
 			"  $2",
 			"}"
 		],
+	},
+	"Relate to viewport width": {
+		"scope": "scss",
+		"prefix": "calc",
+		"body": [
+			"calc(${TM_SELECTED_TEXT/px//} / ${1:375} * 100vw)"
+		],
 	}
 }
