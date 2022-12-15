@@ -36,7 +36,7 @@
 		"scope": "scss",
 		"prefix": "calc",
 		"body": [
-			"calc(${TM_SELECTED_TEXT/px//} / ${1:375} * 100vw)"
+			"calc(${TM_SELECTED_TEXT/px//} / ${1:375} * ${2:100vw})"
 		],
 	}
 }
