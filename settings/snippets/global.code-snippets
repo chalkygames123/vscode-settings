@@ -32,7 +32,7 @@
 			"}"
 		],
 	},
-	"Relate to viewport width": {
+	"Relate to container width": {
 		"scope": "scss",
 		"prefix": "calc",
 		"body": [
