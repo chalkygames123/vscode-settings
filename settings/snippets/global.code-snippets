@@ -29,5 +29,10 @@
     "body": ["@use '../$1abstracts' as a;", ""],
     "prefix": "@use",
     "scope": "scss"
+  },
+  "Wrap with `console.log()`": {
+    "body": ["console.log(${1:${TM_SELECTED_TEXT}})"],
+    "prefix": "log",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact"
   }
 }
