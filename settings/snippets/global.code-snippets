@@ -16,7 +16,7 @@
   // 	"description": "Log output to console"
   // }
   "Include a media query mixin": {
-    "body": ["@include a.mq(${1:md}) {", "  $2", "}"],
+    "body": ["@include a.mq(${1:md}) {", "\t$2", "}"],
     "prefix": "@include",
     "scope": "scss"
   },
