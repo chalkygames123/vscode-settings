@@ -38,6 +38,7 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
+  "prettier.useTabs": true,
   "redhat.telemetry.enabled": true,
   "search.searchOnType": false,
   "window.autoDetectColorScheme": true,
