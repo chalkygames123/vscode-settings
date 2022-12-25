@@ -8,7 +8,7 @@ declare -r TARGET_DIR="$HOME/Library/Application Support/Code/User"
 rmdir "$TARGET_DIR/snippets"
 
 ln -fs \
-  "$PWD/$SOURCE_DIR/keybindings.json" \
-  "$PWD/$SOURCE_DIR/settings.json" \
-  "$PWD/$SOURCE_DIR/snippets" \
-  "$TARGET_DIR"
+	"$PWD/$SOURCE_DIR/keybindings.json" \
+	"$PWD/$SOURCE_DIR/settings.json" \
+	"$PWD/$SOURCE_DIR/snippets" \
+	"$TARGET_DIR"
