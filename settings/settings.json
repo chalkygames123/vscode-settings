@@ -3,6 +3,7 @@
 		"editor.formatOnSave": false
 	},
 	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.accessibilitySupport": "off",
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": {
