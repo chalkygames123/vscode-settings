@@ -7,6 +7,7 @@
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": {
+		"source.addMissingImports": true,
 		"source.fixAll.eslint": true,
 		"source.fixAll.stylelint": true
 	},
