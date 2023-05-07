@@ -32,5 +32,5 @@ fi
 if [[ $dry_run == 1 ]]; then
 	echo "$extensions_to_install" | xargs -I {} echo 'Would install {}'
 else
-	echo "$extensions_to_install" | xargs -I {} -P 0 code --install-extension {}
+	echo "$extensions_to_install" | xargs -I {} code --install-extension {}
 fi

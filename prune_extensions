@@ -32,5 +32,5 @@ fi
 if [[ $dry_run == 1 ]]; then
 	echo "$extensions_to_uninstall" | xargs -I {} echo 'Would uninstall {}'
 else
-	echo "$extensions_to_uninstall" | xargs -I {} -P 0 code --uninstall-extension {}
+	echo "$extensions_to_uninstall" | xargs -I {} code --uninstall-extension {}
 fi
