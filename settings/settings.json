@@ -44,6 +44,9 @@
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"search.searchOnType": false,
+	"terminal.integrated.env.osx": {
+		"FIG_NEW_SESSION": "1"
+	},
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.enableMenuBarMnemonics": false,
