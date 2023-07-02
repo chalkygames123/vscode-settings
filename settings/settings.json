@@ -51,6 +51,7 @@
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	"workbench.activityBar.visible": false,
 	"workbench.colorTheme": "GitHub Light",
+	"workbench.editor.tabSizing": "fixed",
 	"workbench.preferredDarkColorTheme": "GitHub Dark",
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"workbench.startupEditor": "none"
