@@ -22,7 +22,6 @@
 	"editor.linkedEditing": true,
 	"editor.minimap.showSlider": "always",
 	"editor.renderWhitespace": "all",
-	"editor.snippetSuggestions": "top",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.preview": true,
 	"editor.tabSize": 2,
