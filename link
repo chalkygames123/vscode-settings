@@ -6,7 +6,7 @@ declare -r SOURCE_DIR='settings'
 declare -r TARGET_DIR="$HOME/Library/Application Support/Code/User"
 
 mkdir -p "$TARGET_DIR"
-rm -r "$TARGET_DIR/snippets"
+rm -rf "$TARGET_DIR/snippets"
 
 ln -fs \
 	"$PWD/$SOURCE_DIR/keybindings.json" \
