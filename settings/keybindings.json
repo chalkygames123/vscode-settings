@@ -58,5 +58,13 @@
 		"key": "cmd+i",
 		"command": "-inlineChat.start",
 		"when": "inlineChatHasProvider && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+0",
+		"command": "workbench.action.zoomReset"
+	},
+	{
+		"key": "cmd+numpad0",
+		"command": "-workbench.action.zoomReset"
 	}
 ]
