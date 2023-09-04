@@ -25,7 +25,6 @@
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.preview": true,
 	"editor.tabSize": 2,
-	"emmet.triggerExpansionOnTab": true,
 	"emmet.useInlineCompletions": true,
 	"explorer.incrementalNaming": "smart",
 	"files.associations": {
