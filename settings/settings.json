@@ -35,6 +35,8 @@
 	"files.trimFinalNewlines": true,
 	"git.closeDiffOnOperation": true,
 	"git.mergeEditor": true,
+	"japanese-proofreading.textlint.丸かっこ（）": false,
+	"japanese-proofreading.textlint.全角文字と半角文字の間": false,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
 	"javascript.inlayHints.parameterTypes.enabled": true,
