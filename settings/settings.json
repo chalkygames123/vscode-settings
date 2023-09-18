@@ -19,6 +19,7 @@
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
 	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.inlineSuggest.suppressSuggestions": true,
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
 	"editor.minimap.showSlider": "always",
