@@ -2,6 +2,7 @@
 	"[html]": {
 		"editor.formatOnSave": false
 	},
+	"diffEditor.hideUnchangedRegions.enabled": true,
 	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.accessibilitySupport": "off",
 	"editor.autoClosingDelete": "always",
