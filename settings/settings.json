@@ -39,6 +39,12 @@
 	"files.trimFinalNewlines": true,
 	"git.closeDiffOnOperation": true,
 	"git.mergeEditor": true,
+	"github.copilot.enable": {
+		"*": true,
+		"markdown": true,
+		"plaintext": true,
+		"scminput": true
+	},
 	"japanese-proofreading.textlint.丸かっこ（）": false,
 	"japanese-proofreading.textlint.全角文字と半角文字の間": false,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
