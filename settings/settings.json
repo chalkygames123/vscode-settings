@@ -41,6 +41,7 @@
 	"git.closeDiffOnOperation": true,
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
+	"git.pruneOnFetch": true,
 	"github.copilot.enable": {
 		"*": true,
 		"markdown": true,
