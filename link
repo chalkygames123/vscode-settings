@@ -5,10 +5,7 @@ cd "$(dirname "$0")" || return
 declare -r SOURCE_DIR='settings'
 declare -r TARGET_DIR="$HOME/Library/Application Support/Code/User"
 
-mkdir -p "$TARGET_DIR"
-rm -rf "$TARGET_DIR/snippets"
-
-ln -fs \
+ln -Ffs \
 	"$PWD/$SOURCE_DIR/keybindings.json" \
 	"$PWD/$SOURCE_DIR/settings.json" \
 	"$PWD/$SOURCE_DIR/snippets" \
