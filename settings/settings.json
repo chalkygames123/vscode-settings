@@ -39,6 +39,7 @@
 	"files.trimFinalNewlines": true,
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
+	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"github.copilot.enable": {
 		"*": true,
