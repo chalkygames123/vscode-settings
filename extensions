@@ -2,6 +2,7 @@
 arrterian.nix-env-selector
 astro-build.astro-vscode
 bbenoist.Nix
+bierner.markdown-preview-github-styles
 bradlc.vscode-tailwindcss
 ChakrounAnas.turbo-console-log
 dbaeumer.vscode-eslint
