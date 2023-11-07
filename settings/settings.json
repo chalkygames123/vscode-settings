@@ -14,7 +14,6 @@
 		"source.fixAll.eslint": true,
 		"source.fixAll.stylelint": true
 	},
-	"editor.codeActionWidget.includeNearbyQuickfixes": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.seedSearchStringFromSelection": "selection",
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
