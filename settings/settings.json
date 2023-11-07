@@ -28,7 +28,6 @@
 	"editor.minimap.showSlider": "always",
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
-	"editor.suggest.insertMode": "replace",
 	"editor.suggest.preview": true,
 	"editor.suggestSelection": "recentlyUsed",
 	"editor.tabSize": 2,
