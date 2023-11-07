@@ -74,6 +74,7 @@
 	"window.menuBarVisibility": "hidden",
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	"workbench.colorTheme": "GitHub Light",
+	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 	"workbench.editor.tabSizing": "fixed",
 	"workbench.preferredDarkColorTheme": "GitHub Dark",
 	"workbench.preferredLightColorTheme": "GitHub Light",
