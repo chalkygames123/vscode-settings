@@ -14,6 +14,7 @@
 		"source.fixAll.eslint": true,
 		"source.fixAll.stylelint": true
 	},
+	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.seedSearchStringFromSelection": "selection",
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
@@ -24,6 +25,7 @@
 	"editor.inlineSuggest.suppressSuggestions": true,
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
+	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
