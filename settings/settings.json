@@ -32,6 +32,7 @@
 	"editor.suggest.preview": true,
 	"editor.suggestSelection": "recentlyUsed",
 	"editor.tabSize": 2,
+	"emmet.triggerExpansionOnTab": true,
 	"explorer.incrementalNaming": "smart",
 	"files.associations": {
 		"*.njk": "html"
