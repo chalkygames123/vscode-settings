@@ -10,9 +10,9 @@
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": {
-		"source.addMissingImports": true,
-		"source.fixAll.eslint": true,
-		"source.fixAll.stylelint": true
+		"source.addMissingImports": "explicit",
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
 	},
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
