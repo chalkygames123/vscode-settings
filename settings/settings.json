@@ -74,6 +74,7 @@
 	"typescript.inlayHints.parameterTypes.enabled": true,
 	"typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"typescript.inlayHints.variableTypes.enabled": true,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.enableMenuBarMnemonics": false,
