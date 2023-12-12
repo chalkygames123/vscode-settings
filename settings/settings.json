@@ -27,6 +27,7 @@
 	"editor.linkedEditing": true,
 	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
+	"editor.occurrencesHighlight": "multiFile",
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.preview": true,
