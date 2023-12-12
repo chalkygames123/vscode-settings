@@ -52,12 +52,12 @@
 	{
 		"key": "alt+cmd+i",
 		"command": "inlineChat.start",
-		"when": "inlineChatHasProvider && !editorReadonly"
+		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
 	},
 	{
 		"key": "cmd+i",
 		"command": "-inlineChat.start",
-		"when": "inlineChatHasProvider && !editorReadonly"
+		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
 	},
 	{
 		"key": "shift+cmd+0",
