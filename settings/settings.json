@@ -62,7 +62,6 @@
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
-	"scm.experimental.showSyncView": true,
 	"search.searchOnType": false,
 	"terminal.integrated.env.osx": {
 		"FIG_NEW_SESSION": "1"
