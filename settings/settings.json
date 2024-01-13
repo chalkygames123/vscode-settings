@@ -14,6 +14,7 @@
 		"source.fixAll.eslint": "explicit",
 		"source.fixAll.stylelint": "explicit"
 	},
+	"editor.colorDecorators": false,
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.seedSearchStringFromSelection": "selection",
