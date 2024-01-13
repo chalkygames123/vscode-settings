@@ -65,6 +65,7 @@
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"search.searchOnType": false,
+	"search.showLineNumbers": true,
 	"terminal.integrated.env.osx": {
 		"FIG_NEW_SESSION": "1"
 	},
