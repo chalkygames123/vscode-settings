@@ -3,7 +3,6 @@
 		"editor.formatOnSave": false
 	},
 	"diffEditor.experimental.showMoves": true,
-	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.acceptSuggestionOnEnter": "smart",
 	"editor.accessibilitySupport": "off",
