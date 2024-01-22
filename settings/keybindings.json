@@ -38,10 +38,6 @@
 		"command": "workbench.action.tasks.runTask"
 	},
 	{
-		"key": "cmd+r shift+l",
-		"command": "workbench.action.tasks.showLog"
-	},
-	{
 		"key": "cmd+r shift+x",
 		"command": "workbench.action.tasks.terminate"
 	},
