@@ -10,6 +10,10 @@
 		"command": "cursorRedo"
 	},
 	{
+		"key": "ctrl+cmd+.",
+		"command": "editor.action.sourceAction"
+	},
+	{
 		"key": "ctrl+shift+alt+d",
 		"command": "editor.emmet.action.balanceIn"
 	},
