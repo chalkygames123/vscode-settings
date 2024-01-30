@@ -55,6 +55,10 @@
 		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
 	},
 	{
+		"key": "ctrl+cmd+w",
+		"command": "workbench.action.closeEditorsToTheRight"
+	},
+	{
 		"key": "shift+cmd+0",
 		"command": "workbench.action.zoomReset"
 	},
