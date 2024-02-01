@@ -5,11 +5,12 @@
 	"editor.accessibilitySupport": "off",
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
-	"editor.codeActionsOnSave": {
-		"source.addMissingImports": "explicit",
-		"source.fixAll.eslint": "explicit",
-		"source.fixAll.stylelint": "explicit"
-	},
+	"editor.codeActionsOnSave": [
+		"source.addMissingImports",
+		"source.fixAll.eslint",
+		"source.fixAll.stylelint",
+		"source.organizeImports"
+	],
 	"editor.colorDecorators": false,
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
