@@ -7,7 +7,8 @@
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": {
 		"source.addMissingImports": "explicit",
-		"source.fixAll": "explicit"
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
 	},
 	"editor.colorDecorators": false,
 	"editor.cursorSurroundingLines": 7,
