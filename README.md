@@ -4,9 +4,9 @@
 
 - Install the `code` command with the `Shell Command: install 'code' command in PATH` in the VS Code's Command Palette.
 
-## Usage
+## Getting started
 
-### Symlink settings from the backup to the VS Code's user settings file location
+Symlink settings from the backup to the VS Code's user settings file location:
 
 ```shell
 ./link
@@ -14,6 +14,8 @@
 
 > [!WARNING]
 > This script will overwrite the existing settings.
+
+## Usage
 
 ### Install extensions from the backup
 
