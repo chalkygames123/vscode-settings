@@ -6,7 +6,7 @@
 
 ## Usage
 
-### Symlink settings from the backup to the VS Code's user settings file location:
+### Symlink settings from the backup to the VS Code's user settings file location
 
 ```shell
 ./link
@@ -15,27 +15,27 @@
 > [!WARNING]
 > This script will overwrite the existing settings.
 
-### Install extensions from the backup:
+### Install extensions from the backup
 
 ```shell
 ./install_extensions
 ```
 
-#### Options:
+#### Options
 
 - `-n`, `--dry-run`: Run without making any actual changes.
 
-### Prune extensions that are not included in the backup:
+### Prune extensions that are not included in the backup
 
 ```shell
 ./prune_extensions
 ```
 
-#### Options:
+#### Options
 
 - `-n`, `--dry-run`: Run without making any actual changes.
 
-### Back up a list of your extensions into `extensions`:
+### Back up a list of your extensions into `extensions`
 
 ```shell
 ./dump_extensions
