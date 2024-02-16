@@ -68,6 +68,7 @@
 		"CW_NEW_SESSION": "1"
 	},
 	"terminal.integrated.stickyScroll.enabled": true,
+	"terminal.sourceControlRepositoriesKind": "external",
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterTypes.enabled": true,
