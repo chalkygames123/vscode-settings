@@ -63,6 +63,7 @@
 	"redhat.telemetry.enabled": true,
 	"search.searchOnType": false,
 	"search.showLineNumbers": true,
+	"terminal.explorerKind": "external",
 	"terminal.integrated.env.osx": {
 		"CW_NEW_SESSION": "1"
 	},
