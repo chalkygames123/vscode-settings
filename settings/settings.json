@@ -30,6 +30,7 @@
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.preview": true,
+	"editor.suggest.selectionMode": "whenTriggerCharacter",
 	"editor.suggestSelection": "recentlyUsed",
 	"editor.tabSize": 2,
 	"emmet.triggerExpansionOnTab": true,
