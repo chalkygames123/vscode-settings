@@ -1,11 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
 	{
-		"key": "ctrl+k g",
-		"command": "-textPowerTools.filterLinesIncludingString",
-		"when": "editorTextFocus"
-	},
-	{
 		"key": "alt+cmd+u",
 		"command": "cursorRedo"
 	},
@@ -30,6 +25,20 @@
 		"command": "editor.emmet.action.matchTag"
 	},
 	{
+		"key": "cmd+i",
+		"command": "-inlineChat.start",
+		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k g",
+		"command": "-textPowerTools.filterLinesIncludingString",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+cmd+w",
+		"command": "workbench.action.closeEditorsToTheRight"
+	},
+	{
 		"key": "ctrl+shift+[Minus]",
 		"command": "workbench.action.navigateForward"
 	},
@@ -50,13 +59,8 @@
 		"command": "workbench.action.tasks.test"
 	},
 	{
-		"key": "cmd+i",
-		"command": "-inlineChat.start",
-		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
-	},
-	{
-		"key": "ctrl+cmd+w",
-		"command": "workbench.action.closeEditorsToTheRight"
+		"key": "ctrl+cmd+j",
+		"command": "workbench.action.toggleMaximizedPanel"
 	},
 	{
 		"key": "shift+cmd+0",
@@ -65,9 +69,5 @@
 	{
 		"key": "cmd+numpad0",
 		"command": "-workbench.action.zoomReset"
-	},
-	{
-		"key": "ctrl+cmd+j",
-		"command": "workbench.action.toggleMaximizedPanel"
 	}
 ]
