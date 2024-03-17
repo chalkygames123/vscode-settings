@@ -5,11 +5,6 @@
 		"command": "cursorRedo"
 	},
 	{
-		"key": "tab",
-		"command": "-editor.action.inlineEdit.accept",
-		"when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
-	},
-	{
 		"key": "ctrl+cmd+.",
 		"command": "editor.action.sourceAction"
 	},
