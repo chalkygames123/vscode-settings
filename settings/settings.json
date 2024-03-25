@@ -71,6 +71,7 @@
 	},
 	"terminal.integrated.stickyScroll.enabled": true,
 	"terminal.sourceControlRepositoriesKind": "external",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterTypes.enabled": true,
