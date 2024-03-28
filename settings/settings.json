@@ -5,10 +5,11 @@
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
-		"source.addMissingImports",
+		"source.addMissingImports.ts",
+		"source.sortImports.ts",
+		"source.fixAll.ts",
 		"source.fixAll.eslint",
-		"source.fixAll.stylelint",
-		"source.organizeImports"
+		"source.fixAll.stylelint"
 	],
 	"editor.colorDecorators": false,
 	"editor.cursorSurroundingLines": 7,
