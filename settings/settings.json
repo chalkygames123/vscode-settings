@@ -1,4 +1,7 @@
 {
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.accessibilitySupport": "off",
