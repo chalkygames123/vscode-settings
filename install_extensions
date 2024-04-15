@@ -12,6 +12,11 @@ while (($#)); do
 		readonly dry_run
 		shift
 		;;
+	--insiders | -i)
+		code='code-insiders'
+		readonly insiders=1
+		shift
+		;;
 	--* | -*)
 		echo "error: unknown option '$1'" >&2
 		exit 1
@@ -22,7 +27,12 @@ while (($#)); do
 	esac
 done
 
-extensions_to_install="$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
+if [[ $insiders == 1 ]]; then
+	extensions_to_install="$(code-insiders --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
+else
+	extensions_to_install="$(code --list-extensions | diff -u - extensions | tail -n +4 | grep '^\+' | sed 's/\+//')"
+fi
+
 readonly extensions_to_install
 
 if [[ -z $extensions_to_install ]]; then
@@ -32,5 +42,9 @@ fi
 if [[ $dry_run == 1 ]]; then
 	echo "$extensions_to_install" | xargs -I {} echo 'Would install {}'
 else
-	echo "$extensions_to_install" | xargs -I {} code --install-extension {}
+	if [[ $insiders == 1 ]]; then
+		echo "$extensions_to_install" | xargs -I {} code-insiders --install-extension {}
+	else
+		echo "$extensions_to_install" | xargs -I {} code --install-extension {}
+	fi
 fi
