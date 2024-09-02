@@ -65,6 +65,11 @@
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
+	"search.exclude": {
+		"**/.next": true,
+		"**/.vercel": true,
+		"**/dist": true
+	},
 	"search.searchOnType": false,
 	"search.showLineNumbers": true,
 	"terminal.explorerKind": "external",
