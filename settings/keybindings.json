@@ -57,6 +57,10 @@
 		"command": "workbench.action.closeEditorsToTheRight"
 	},
 	{
+		"key": "ctrl+shift+pageup",
+		"command": "workbench.action.moveEditorLeftInGroup"
+	},
+	{
 		"key": "ctrl+shift+[Minus]",
 		"command": "workbench.action.navigateForward"
 	},
