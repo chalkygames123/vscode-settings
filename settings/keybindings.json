@@ -38,6 +38,10 @@
 		"key": "ctrl+alt+t",
 		"command": "editor.emmet.action.matchTag"
 	},
+{
+		"key": "ctrl+shift+cmd+g",
+		"command": "gitlens.views.commitDetails.focus"
+	},
 	{
 		"key": "cmd+i",
 		"command": "-inlineChat.start",
