@@ -3,6 +3,7 @@
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	"diffEditor.experimental.showMoves": true,
+	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.accessibilitySupport": "off",
 	"editor.autoClosingDelete": "always",
