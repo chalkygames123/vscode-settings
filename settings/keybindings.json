@@ -45,7 +45,7 @@
 	{
 		"key": "cmd+i",
 		"command": "-inlineChat.start",
-		"when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+		"when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
 	},
 	{
 		"key": "ctrl+k g",
