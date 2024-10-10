@@ -66,8 +66,10 @@
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"search.exclude": {
+		"**/.astro": true,
 		"**/.next": true,
 		"**/.vercel": true,
+		"**/.wrangler": true,
 		"**/dist": true
 	},
 	"search.searchOnType": false,
