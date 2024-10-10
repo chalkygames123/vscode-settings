@@ -69,10 +69,6 @@
 		"command": "workbench.action.navigateForward"
 	},
 	{
-		"key": "cmd+k ctrl+cmd+i",
-		"command": "workbench.action.openQuickChat"
-	},
-	{
 		"key": "cmd+r r",
 		"command": "workbench.action.tasks.reRunTask"
 	},
