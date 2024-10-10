@@ -15,21 +15,6 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Include `mq` mixin": {
-		"body": ["@include a.mq(${1:md}) {", "\t$2", "}"],
-		"prefix": "@include",
-		"scope": "scss"
-	},
-	"Relate to container width": {
-		"body": ["calc(${TM_SELECTED_TEXT/px//} / ${1:375} * ${2:100vw})"],
-		"prefix": "calc",
-		"scope": "scss"
-	},
-	"Use `abstracts` file": {
-		"body": ["@use '../$1abstracts' as a;", ""],
-		"prefix": "@use",
-		"scope": "scss"
-	},
 	"Wrap with `console.log()`": {
 		"body": ["console.log(${1:${TM_SELECTED_TEXT}})"],
 		"prefix": "log",
