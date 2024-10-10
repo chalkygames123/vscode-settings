@@ -11,5 +11,4 @@ declare -a settings=(
 
 for setting in "${settings[@]}"; do
 	ln -Ffs "$PWD/$settings_dir/$setting" "$HOME/Library/Application Support/Code/User"
-	ln -Ffs "$PWD/$settings_dir/$setting" "$HOME/Library/Application Support/Code - Insiders/User"
 done
