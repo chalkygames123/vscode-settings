@@ -16,8 +16,53 @@
 	// 	"description": "Log output to console"
 	// }
 	"Log to the console": {
-		"body": ["console.log(`${1:$TM_SELECTED_TEXT}:`, ${1:$TM_SELECTED_TEXT});"],
+		"body": ["console.log(${1:$TM_SELECTED_TEXT});"],
 		"prefix": "log",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Log to the console as a hierarchical listing": {
+		"body": ["console.dir(${1:$TM_SELECTED_TEXT});"],
+		"prefix": "dir",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Log to the console with the info log level": {
+		"body": [
+			"console.info(",
+			"\t'INFO ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
+			"\t${2:$TM_SELECTED_TEXT},",
+			");"
+		],
+		"prefix": "loginfo",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Log to the console with the warning log level": {
+		"body": [
+			"console.warn(",
+			"\t'WARNING ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
+			"\t${2:$TM_SELECTED_TEXT},",
+			");"
+		],
+		"prefix": "logwarn",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Log to the console with the error log level": {
+		"body": [
+			"console.error(",
+			"\t'ERROR ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
+			"\t${2:$TM_SELECTED_TEXT},",
+			");"
+		],
+		"prefix": "logerror",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Log to the console with the debug log level": {
+		"body": [
+			"console.debug(",
+			"\t'DEBUG ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
+			"\t${2:$TM_SELECTED_TEXT},",
+			");"
+		],
+		"prefix": "logdebug",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	}
 }
