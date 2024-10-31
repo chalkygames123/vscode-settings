@@ -15,54 +15,64 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Log to the console": {
-		"body": ["console.log(${1:$TM_SELECTED_TEXT});"],
+	"Output a message to the console": {
+		"body": [
+			"console.log(",
+			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] LOG:`,",
+			"\t`${1:$TM_SELECTED_TEXT}`,",
+			");"
+		],
 		"prefix": "log",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Log to the console as a hierarchical listing": {
+	"Output a message at the debug log level": {
+		"body": [
+			"console.debug(",
+			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] DEBUG:`,",
+			"\t`${1:$TM_SELECTED_TEXT}`,",
+			");"
+		],
+		"prefix": "debug",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Output a message at the info log level": {
+		"body": [
+			"console.info(",
+			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] INFO:`,",
+			"\t`${1:$TM_SELECTED_TEXT}`,",
+			");"
+		],
+		"prefix": "info",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Output a message at the warning log level": {
+		"body": [
+			"console.warn(",
+			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] WARNING:`,",
+			"\t`${1:$TM_SELECTED_TEXT}`,",
+			");"
+		],
+		"prefix": "warn",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Output a message at the error log level": {
+		"body": [
+			"console.error(",
+			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] ERROR:`,",
+			"\t`${1:$TM_SELECTED_TEXT}`,",
+			");"
+		],
+		"prefix": "error",
+		"scope": "javascript,javascriptreact,typescript,typescriptreact"
+	},
+	"Display a list of properties of an object": {
 		"body": ["console.dir(${1:$TM_SELECTED_TEXT});"],
 		"prefix": "dir",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Log to the console with the info log level": {
-		"body": [
-			"console.info(",
-			"\t'INFO ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
-			"\t${2:$TM_SELECTED_TEXT},",
-			");"
-		],
-		"prefix": "loginfo",
-		"scope": "javascript,javascriptreact,typescript,typescriptreact"
-	},
-	"Log to the console with the warning log level": {
-		"body": [
-			"console.warn(",
-			"\t'WARNING ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
-			"\t${2:$TM_SELECTED_TEXT},",
-			");"
-		],
-		"prefix": "logwarn",
-		"scope": "javascript,javascriptreact,typescript,typescriptreact"
-	},
-	"Log to the console with the error log level": {
-		"body": [
-			"console.error(",
-			"\t'ERROR ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
-			"\t${2:$TM_SELECTED_TEXT},",
-			");"
-		],
-		"prefix": "logerror",
-		"scope": "javascript,javascriptreact,typescript,typescriptreact"
-	},
-	"Log to the console with the debug log level": {
-		"body": [
-			"console.debug(",
-			"\t'DEBUG ($RELATIVE_FILEPATH:$TM_LINE_NUMBER) ${1:$TM_SELECTED_TEXT}:',",
-			"\t${2:$TM_SELECTED_TEXT},",
-			");"
-		],
-		"prefix": "logdebug",
+	"Display a tabular data as a table": {
+		"body": ["console.table(${1:$TM_SELECTED_TEXT});"],
+		"prefix": "table",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	}
 }
