@@ -47,6 +47,7 @@
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
+	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.editor.enableAutoCompletions": true,
 	"github.copilot.enable": {
 		"*": true,
