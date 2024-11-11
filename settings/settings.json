@@ -47,6 +47,7 @@
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
+	"github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
 	"github.copilot.chat.inlineChatHint.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.search.semanticTextResults": true,
