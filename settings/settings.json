@@ -48,6 +48,7 @@
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
 	"github.copilot.chat.localeOverride": "ja",
+	"github.copilot.chat.search.semanticTextResults": true,
 	"github.copilot.chat.temporalContext.enabled": true,
 	"github.copilot.editor.enableAutoCompletions": true,
 	"github.copilot.enable": {
