@@ -20,22 +20,18 @@ Symlink settings from the backup to the VS Code's user settings file location:
 ### Install extensions from the backup
 
 ```shell
-./install_extensions
+./install_extensions [-n|--dry-run]
 ```
 
-#### Options
-
-- `-n`, `--dry-run`: Run without making any actual changes.
+`-n`, `--dry-run`: Run without making any actual changes.
 
 ### Prune extensions that are not included in the backup
 
 ```shell
-./prune_extensions
+./prune_extensions [-n|--dry-run]
 ```
 
-#### Options
-
-- `-n`, `--dry-run`: Run without making any actual changes.
+`-n`, `--dry-run`: Run without making any actual changes.
 
 ### Back up a list of your extensions into `extensions`
 
