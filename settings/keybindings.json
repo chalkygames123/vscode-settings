@@ -23,6 +23,16 @@
 		"command": "editor.action.sourceAction"
 	},
 	{
+		"key": "shift+alt+cmd+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "cmd+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
 		"key": "ctrl+shift+alt+d",
 		"command": "editor.emmet.action.balanceIn"
 	},
