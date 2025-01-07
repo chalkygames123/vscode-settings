@@ -43,11 +43,6 @@
 		"command": "gitlens.views.commitDetails.focus"
 	},
 	{
-		"key": "cmd+i",
-		"command": "-inlineChat.start",
-		"when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
-	},
-	{
 		"key": "ctrl+k g",
 		"command": "-textPowerTools.filterLinesIncludingString",
 		"when": "editorTextFocus"
