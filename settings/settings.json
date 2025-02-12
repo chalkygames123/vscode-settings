@@ -54,6 +54,7 @@
 	],
 	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.editor.temporalContext.enabled": true,
+	"github.copilot.chat.edits.temporalContext.enabled": true,
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
 	"github.copilot.chat.inlineChatHint.enabled": true,
