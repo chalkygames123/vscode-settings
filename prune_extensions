@@ -3,6 +3,7 @@
 cd "$(dirname "$0")" || return
 
 declare -i dry_run=0
+declare -i insiders=0
 declare extensions_to_uninstall
 
 while (($#)); do
@@ -10,6 +11,11 @@ while (($#)); do
 	--dry-run | -n)
 		dry_run=1
 		readonly dry_run
+		shift
+		;;
+	--insiders | -i)
+		insiders=1
+		readonly insiders=1
 		shift
 		;;
 	--* | -*)
@@ -22,7 +28,12 @@ while (($#)); do
 	esac
 done
 
-extensions_to_uninstall="$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
+if [[ $insiders == 1 ]]; then
+	extensions_to_uninstall="$(code-insiders --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
+else
+	extensions_to_uninstall="$(code --list-extensions | diff -u extensions - | tail -n +4 | grep '^\+' | sed 's/\+//')"
+fi
+
 readonly extensions_to_uninstall
 
 if [[ -z $extensions_to_uninstall ]]; then
@@ -32,5 +43,9 @@ fi
 if [[ $dry_run == 1 ]]; then
 	echo "$extensions_to_uninstall" | xargs -I {} echo 'Would uninstall {}'
 else
-	echo "$extensions_to_uninstall" | xargs -I {} code --uninstall-extension {}
+	if [[ $insiders == 1 ]]; then
+		echo "$extensions_to_uninstall" | xargs -I {} code-insiders --uninstall-extension {}
+	else
+		echo "$extensions_to_uninstall" | xargs -I {} code --uninstall-extension {}
+	fi
 fi

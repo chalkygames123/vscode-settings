@@ -3,6 +3,7 @@
 cd "$(dirname "$0")" || return
 
 declare -i dry_run=0
+declare -i insiders=0
 declare extensions_to_install
 
 while (($#)); do
@@ -13,7 +14,7 @@ while (($#)); do
 		shift
 		;;
 	--insiders | -i)
-		code='code-insiders'
+		insiders=1
 		readonly insiders=1
 		shift
 		;;

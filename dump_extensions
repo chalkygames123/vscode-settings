@@ -2,13 +2,36 @@
 
 cd "$(dirname "$0")" || return
 
+declare -i insiders=0
 declare installed_extensions
 declare added_extensions
 declare added_extensions_count
 declare removed_extensions
 declare removed_extensions_count
 
-installed_extensions="$(code --list-extensions)"
+while (($#)); do
+	case $1 in
+	--insiders | -i)
+		insiders=1
+		readonly insiders
+		shift
+		;;
+	--* | -*)
+		echo "error: unknown option '$1'" >&2
+		exit 1
+		;;
+	*)
+		shift
+		;;
+	esac
+done
+
+if [[ $insiders == 1 ]]; then
+	installed_extensions="$(code-insiders --list-extensions)"
+else
+	installed_extensions="$(code --list-extensions)"
+fi
+
 readonly installed_extensions
 
 if echo "$installed_extensions" | cmp -s extensions -; then
