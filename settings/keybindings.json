@@ -9,16 +9,6 @@
 		"command": "editor.action.goToTypeDefinition"
 	},
 	{
-		"key": "tab",
-		"command": "editor.action.inlineSuggest.commit",
-		"when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus"
-	},
-	{
-		"key": "tab",
-		"command": "-editor.action.inlineSuggest.commit",
-		"when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
-	},
-	{
 		"key": "ctrl+cmd+.",
 		"command": "editor.action.sourceAction"
 	},
