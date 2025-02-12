@@ -123,5 +123,6 @@
 	"workbench.editor.tabSizing": "fixed",
 	"workbench.preferredDarkColorTheme": "GitHub Dark",
 	"workbench.preferredLightColorTheme": "GitHub Light",
+	"workbench.startupEditor": "readme",
 	"workbench.tree.enableStickyScroll": true
 }
