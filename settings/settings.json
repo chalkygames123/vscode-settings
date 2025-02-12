@@ -60,7 +60,6 @@
 	"github.copilot.chat.inlineChatHint.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.search.semanticTextResults": true,
-	"github.copilot.chat.temporalContext.enabled": true,
 	"github.copilot.editor.enableAutoCompletions": true,
 	"github.copilot.enable": {
 		"*": true,
