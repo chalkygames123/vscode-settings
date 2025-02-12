@@ -52,6 +52,7 @@
 			"text": "Use conventional commit message format."
 		}
 	],
+	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
 	"github.copilot.chat.inlineChatHint.enabled": true,
