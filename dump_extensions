@@ -61,5 +61,9 @@ else
 		echo "$removed_extensions"
 	fi
 
-	echo "$installed_extensions" >extensions
+	if [[ -n $installed_extensions ]]; then
+		echo "$installed_extensions" >extensions
+	else
+		: >extensions
+	fi
 fi
