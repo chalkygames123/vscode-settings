@@ -67,6 +67,7 @@
 		"plaintext": true,
 		"scminput": true
 	},
+	"github.copilot.nextEditSuggestions.enabled": true,
 	"githubPullRequests.pullBranch": "never",
 	"japanese-proofreading.textlint.全角文字と半角文字の間": false,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
