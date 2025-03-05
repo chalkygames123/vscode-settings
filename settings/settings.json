@@ -141,8 +141,8 @@
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 	"workbench.editor.tabSizing": "fixed",
-	"workbench.preferredDarkColorTheme": "GitHub Dark",
-	"workbench.preferredLightColorTheme": "GitHub Light",
-	"workbench.startupEditor": "readme",
+	"workbench.editorAssociations": {
+		"*.svg": "default"
+	},
 	"workbench.tree.enableStickyScroll": true
 }
