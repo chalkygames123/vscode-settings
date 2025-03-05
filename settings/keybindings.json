@@ -38,6 +38,16 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "cmd+enter",
+		"command": "workbench.action.chat.submit",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress && chatLocation != 'editing-session' || chatInstructionsAttached && inChatInput && !chatSessionRequestInProgress && chatLocation != 'editing-session'"
+	},
+	{
+		"key": "enter",
+		"command": "-workbench.action.chat.submit",
+		"when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress && chatLocation != 'editing-session' || chatInstructionsAttached && inChatInput && !chatSessionRequestInProgress && chatLocation != 'editing-session'"
+	},
+	{
 		"key": "ctrl+cmd+w",
 		"command": "workbench.action.closeEditorsToTheRight"
 	},
