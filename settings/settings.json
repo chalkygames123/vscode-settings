@@ -84,6 +84,7 @@
 		"mdx"
 	],
 	"inlineChat.lineEmptyHint": true,
+	"japanese-proofreading.textlint.ハイフン(-)": false,
 	"japanese-proofreading.textlint.全角文字と半角文字の間": false,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
