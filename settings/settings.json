@@ -111,7 +111,6 @@
 	"terminal.sourceControlRepositoriesKind": "external",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.experimental.expandableHover": true,
-	"typescript.experimental.updateImportsOnPaste": true,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterTypes.enabled": true,
