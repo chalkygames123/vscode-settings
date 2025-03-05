@@ -42,7 +42,6 @@
 		"*.njk": "html"
 	},
 	"files.eol": "\n",
-	"files.trimFinalNewlines": true,
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
 	"git.fetchOnPull": true,
