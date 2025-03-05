@@ -120,7 +120,6 @@
 	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
-	"window.enableMenuBarMnemonics": false,
 	"window.menuBarVisibility": "hidden",
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
 	"workbench.colorTheme": "GitHub Light",
