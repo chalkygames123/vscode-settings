@@ -37,7 +37,7 @@
 	"editor.tabSize": 2,
 	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
-	"explorer.incrementalNaming": "smart",
+	"explorer.incrementalNaming": "disabled",
 	"files.associations": {
 		"*.njk": "html"
 	},
