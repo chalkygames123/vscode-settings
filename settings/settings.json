@@ -144,5 +144,6 @@
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
+	"workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
 	"workbench.tree.enableStickyScroll": true
 }
