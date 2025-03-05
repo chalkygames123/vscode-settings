@@ -145,5 +145,6 @@
 		"*.svg": "default"
 	},
 	"workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
+	"workbench.preferredLightColorTheme": "GitHub Light High Contrast",
 	"workbench.tree.enableStickyScroll": true
 }
