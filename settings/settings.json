@@ -102,16 +102,6 @@
 	},
 	"search.searchOnType": false,
 	"search.showLineNumbers": true,
-	"sort-json.settings.customSortComparisons": [
-		{
-			"comparison": "isList && isCollection ? a.command.startsWith('-') === b.command.startsWith('-') ? a.command.replace(/^-/, '').localeCompare(b.command.replace(/^-/, '')) : a.command.startsWith('-') ? 1 : -1 : true",
-			"description": "sort collection by command in ascending order with and without '-' prefix"
-		},
-		{
-			"comparison": "isList && isCollection ? a.command.replace(/^-/, '').localeCompare(b.command.replace(/^-/, '')) : true",
-			"description": "sort collection by command in ascending order ignoring '-' prefix"
-		}
-	],
 	"terminal.explorerKind": "external",
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.integrated.env.osx": {
