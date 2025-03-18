@@ -58,6 +58,15 @@
 			"text": "Always check project files before suggesting structural or dependency changes."
 		},
 		{
+			"text": "When the context is unclear, always ask me."
+		},
+		{
+			"text": "When starting a task, always run `git status` to review the current working tree."
+		},
+		{
+			"text": "When there are many uncommitted changes irrelevant to the current task, always ask me to start a new session unless otherwise specified."
+		},
+		{
 			"text": "When you encounter any problem, always think carefully about the root cause before jumping to conclusions."
 		},
 		{
