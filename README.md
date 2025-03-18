@@ -6,7 +6,7 @@ Make sure you have VS Code's `code` command installed. If you haven't already, r
 
 ## Getting started
 
-Symlink settings from the backup to VS Code's user settings file location:
+**Symlink settings from the backup to VS Code's user settings file location**:
 
 ```shell
 ./link
