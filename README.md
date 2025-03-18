@@ -1,12 +1,16 @@
 # vscode-settings
 
+My personal VS Code settings and extensions.
+
 ## Prerequisites
 
 Make sure you have VS Code's `code` command installed. If you haven't already, run `Shell Command: Install 'code' command in PATH` in the Command Palette.
 
-## Getting started
+## Usage
 
-**Symlink settings from the backup to VS Code's user settings file location**:
+There are a few scripts to help you manage your VS Code settings and extensions.
+
+### Symlink settings from the backup to VS Code's user settings file location
 
 ```shell
 ./link
@@ -15,9 +19,7 @@ Make sure you have VS Code's `code` command installed. If you haven't already, r
 > [!WARNING]
 > This script will overwrite your existing settings.
 
-## Usage
-
-**Back up your currently installed extensions to the `extensions` file**:
+### Back up your currently installed extensions to the `extensions` file
 
 ```shell
 ./dump_extensions [-i|--insiders]
@@ -25,7 +27,7 @@ Make sure you have VS Code's `code` command installed. If you haven't already, r
 
 `-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
 
-**Install extensions listed in the `extensions` file**:
+### Install extensions listed in the `extensions` file
 
 ```shell
 ./install_extensions [-n|--dry-run] [-i|--insiders]
@@ -35,7 +37,7 @@ Make sure you have VS Code's `code` command installed. If you haven't already, r
 
 `-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
 
-**Uninstall extensions not listed in the `extensions` file**:
+### Uninstall extensions not listed in the `extensions` file
 
 ```shell
 ./prune_extensions [-n|--dry-run] [-i|--insiders]
