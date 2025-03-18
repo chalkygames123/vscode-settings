@@ -114,6 +114,7 @@
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
 	"keyboard.dispatch": "keyCode",
+	"prettier.resolveGlobalModules": true,
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
