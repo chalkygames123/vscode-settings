@@ -47,6 +47,29 @@
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "Always think in English and respond in Japanese unless otherwise specified."
+		},
+		{
+			"text": "Always ensure the code is complete."
+		},
+		{
+			"text": "Always check project files before suggesting structural or dependency changes."
+		},
+		{
+			"text": "When you encounter any problem, always think carefully about the root cause before jumping to conclusions."
+		},
+		{
+			"text": "When you fail the test, linting, or type checking two or more times in a row, always review the current situation and work together with me to find a solution."
+		},
+		{
+			"text": "Never forget to update codebase documentation with changes."
+		},
+		{
+			"text": "Never begin your response with what you have been asked."
+		}
+	],
 	"github.copilot.chat.commitMessageGeneration.instructions": [
 		{
 			"text": "Use conventional commit message format."
