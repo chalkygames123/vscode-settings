@@ -145,7 +145,7 @@
 	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
-	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"window.title": "${folderPath}${separator}${activeEditorState}",
 	"workbench.colorTheme": "GitHub Light",
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
