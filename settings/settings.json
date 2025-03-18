@@ -152,7 +152,7 @@
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
-	"workbench.preferredDarkColorTheme": "GitHub Dark High Contrast",
+	"workbench.preferredDarkColorTheme": "GitHub Dark Colorblind (Beta)",
 	"workbench.preferredLightColorTheme": "GitHub Light High Contrast",
 	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
 	"workbench.tree.enableStickyScroll": true
