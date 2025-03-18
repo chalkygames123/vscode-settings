@@ -146,7 +146,6 @@
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.title": "${folderPath}${separator}${activeEditorState}",
-	"workbench.colorTheme": "GitHub Light",
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 	"workbench.editor.tabSizing": "fixed",
