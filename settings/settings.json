@@ -129,7 +129,6 @@
 	"terminal.integrated.env.osx": {
 		"CW_NEW_SESSION": "1"
 	},
-	"terminal.integrated.stickyScroll.enabled": true,
 	"terminal.sourceControlRepositoriesKind": "external",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.experimental.expandableHover": true,
