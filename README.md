@@ -2,39 +2,45 @@
 
 ## Prerequisites
 
-- Install the `code` command with the `Shell Command: install 'code' command in PATH` in the VS Code's Command Palette.
+Make sure you have VS Code's `code` command installed. If you haven't already, run `Shell Command: Install 'code' command in PATH` in the Command Palette.
 
 ## Getting started
 
-Symlink settings from the backup to the VS Code's user settings file location:
+Symlink settings from the backup to VS Code's user settings file location:
 
 ```shell
 ./link
 ```
 
 > [!WARNING]
-> This script will overwrite the existing settings.
+> This script will overwrite your existing settings.
 
 ## Usage
 
-### Install extensions from the backup
+**Back up your currently installed extensions to the `extensions` file**:
 
 ```shell
-./install_extensions [-n|--dry-run]
+./dump_extensions [-i|--insiders]
+```
+
+`-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
+
+**Install extensions listed in the `extensions` file**:
+
+```shell
+./install_extensions [-n|--dry-run] [-i|--insiders]
 ```
 
 `-n`, `--dry-run`: Run without making any actual changes.
 
-### Prune extensions that are not included in the backup
+`-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
+
+**Uninstall extensions not listed in the `extensions` file**:
 
 ```shell
-./prune_extensions [-n|--dry-run]
+./prune_extensions [-n|--dry-run] [-i|--insiders]
 ```
 
 `-n`, `--dry-run`: Run without making any actual changes.
 
-### Back up a list of your extensions into `extensions`
-
-```shell
-./dump_extensions
-```
+`-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
