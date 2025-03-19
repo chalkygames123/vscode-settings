@@ -58,6 +58,9 @@
 			"text": "Always check project files before suggesting structural or dependency changes."
 		},
 		{
+			"text": "Always focus on the current task. If there are any relevant changes you want to make, be sure to suggest them to me before actually applying them."
+		},
+		{
 			"text": "When the context is unclear, always ask me."
 		},
 		{
