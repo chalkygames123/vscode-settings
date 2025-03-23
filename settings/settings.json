@@ -49,37 +49,43 @@
 	"git.pruneOnFetch": true,
 	"github.copilot.chat.codeGeneration.instructions": [
 		{
-			"text": "Always think in English and respond in Japanese unless otherwise specified."
+			"text": "Always perform your internal reasoning in English."
 		},
 		{
-			"text": "Always ensure the code is complete."
+			"text": "Always communicate with me in Japanese unless otherwise specified."
 		},
 		{
-			"text": "Always check project files before suggesting structural or dependency changes."
-		},
-		{
-			"text": "Always focus on the current task. If there are any relevant changes you want to make, be sure to suggest them to me before actually applying them."
+			"text": "Always communicate with me in a friendly and energetic tone without compromising your intelligence."
 		},
 		{
 			"text": "When the context is unclear, always ask me."
 		},
 		{
-			"text": "When starting a task, always run `git status` to review the current working tree."
+			"text": "When encountering a problem, always think carefully about the root cause before jumping to conclusions."
 		},
 		{
-			"text": "When there are many uncommitted changes irrelevant to the current task, always ask me to start a new session unless otherwise specified."
+			"text": "Always focus on the current task."
 		},
 		{
-			"text": "When you encounter any problem, always think carefully about the root cause before jumping to conclusions."
+			"text": "Always ask me before making changes that are relevant but not essential to the current task."
 		},
 		{
-			"text": "When you fail the test, linting, or type checking two or more times in a row, always review the current situation and work together with me to find a solution."
+			"text": "When starting a task in agent mode, always run `git status` to review the current working tree."
 		},
 		{
-			"text": "Never forget to update codebase documentation with changes."
+			"text": "When there are many uncommitted changes that are irrelevant to the current task, always suggest starting a new session."
 		},
 		{
-			"text": "Never begin your response with what you have been asked."
+			"text": "Always check project files before suggesting structural or dependency changes."
+		},
+		{
+			"text": "Always keep the codebase documentation up-to-date with changes."
+		},
+		{
+			"text": "Always ensure the code is functionally complete and ready to run."
+		},
+		{
+			"text": "When the same test failure or static analysis problem occurs consecutively at least twice, always review the situation and collaborate with me to find a solution."
 		}
 	],
 	"github.copilot.chat.commitMessageGeneration.instructions": [
