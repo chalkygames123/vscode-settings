@@ -79,6 +79,9 @@
 			"text": "Always check project files before suggesting structural or dependency changes."
 		},
 		{
+			"text": "Always keep the codebase clean and organized, following well-known patterns and best practices."
+		},
+		{
 			"text": "Always keep the codebase documentation up-to-date with changes."
 		},
 		{
