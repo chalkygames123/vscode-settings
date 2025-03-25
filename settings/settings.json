@@ -162,7 +162,7 @@
 	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
-	"window.title": "${folderPath}${separator}${activeEditorState}",
+	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 	"workbench.editor.tabSizing": "fixed",
