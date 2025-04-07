@@ -155,6 +155,7 @@
 	},
 	"terminal.sourceControlRepositoriesKind": "external",
 	"totalTypeScript.hideAllTips": true,
+	"totalTypeScript.hideBasicTips": true,
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.experimental.expandableHover": true,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
