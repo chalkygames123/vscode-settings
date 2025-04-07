@@ -136,6 +136,7 @@
 	"keyboard.dispatch": "keyCode",
 	"prettier.resolveGlobalModules": true,
 	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"search.exclude": {
