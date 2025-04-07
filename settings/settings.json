@@ -168,7 +168,6 @@
 	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-	"workbench.editor.tabSizing": "fixed",
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
