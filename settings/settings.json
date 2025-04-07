@@ -48,6 +48,7 @@
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
+	"github.copilot.chat.agent.thinkingTool": true,
 	"github.copilot.chat.codeGeneration.instructions": [
 		{
 			"text": "Always perform your internal reasoning in English."
