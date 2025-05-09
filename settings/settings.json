@@ -38,9 +38,6 @@
 	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
 	"explorer.incrementalNaming": "disabled",
-	"files.associations": {
-		"*.njk": "html"
-	},
 	"files.eol": "\n",
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
