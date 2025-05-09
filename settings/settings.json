@@ -97,7 +97,6 @@
 		"scminput": true
 	},
 	"github.copilot.nextEditSuggestions.enabled": true,
-	"githubPullRequests.pullBranch": "never",
 	"iconify.languageIds": [
 		"javascript",
 		"javascriptreact",
