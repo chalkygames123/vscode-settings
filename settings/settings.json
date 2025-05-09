@@ -80,7 +80,7 @@
 	],
 	"github.copilot.chat.commitMessageGeneration.instructions": [
 		{
-			"text": "Use conventional commit message format."
+			"text": "Use Conventional Commits."
 		}
 	],
 	"github.copilot.chat.completionContext.typescript.mode": "on",
