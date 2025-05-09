@@ -90,7 +90,6 @@
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.search.semanticTextResults": true,
-	"github.copilot.editor.enableAutoCompletions": true,
 	"github.copilot.enable": {
 		"*": true,
 		"markdown": true,
