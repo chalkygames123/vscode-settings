@@ -95,6 +95,7 @@
 		"scminput": true
 	},
 	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.nextEditSuggestions.fixes": true,
 	"iconify.languageIds": [
 		"javascript",
 		"javascriptreact",
