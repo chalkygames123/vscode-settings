@@ -1,15 +1,12 @@
 #!/bin/bash
 
-cd "$(dirname "$0")" || return
+cd "$(dirname "$0")" || exit
 
-declare -r settings_dir='settings'
-declare -a settings=(
-	"keybindings.json"
-	"settings.json"
-	"snippets/"
-)
+declare -r target_dir="$HOME/Library/Application Support/Code/User"
+declare -r target_dir_insiders="$HOME/Library/Application Support/Code - Insiders/User"
 
-for setting in "${settings[@]}"; do
-	ln -Ffs "$PWD/$settings_dir/$setting" "$HOME/Library/Application Support/Code/User"
-	ln -Ffs "$PWD/$settings_dir/$setting" "$HOME/Library/Application Support/Code - Insiders/User"
-done
+mkdir -p "$target_dir"
+mkdir -p "$target_dir_insiders"
+
+ln -shf "$PWD"/settings/* "$target_dir"
+ln -shf "$PWD"/settings/* "$target_dir_insiders"
