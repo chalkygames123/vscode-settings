@@ -110,6 +110,7 @@
 		"mdx"
 	],
 	"inlineChat.enableV2": true,
+	"inlineChat.hideOnRequest": true,
 	"inlineChat.lineEmptyHint": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
