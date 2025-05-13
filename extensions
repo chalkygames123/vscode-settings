@@ -11,7 +11,6 @@ esbenp.prettier-vscode
 formulahendry.auto-rename-tag
 github.copilot
 github.copilot-chat
-github.copilot-workspace
 github.github-vscode-theme
 github.remotehub
 github.vscode-github-actions
