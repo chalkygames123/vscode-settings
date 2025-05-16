@@ -151,7 +151,6 @@
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
 	"workbench.editor.alwaysShowEditorActions": true,
-	"workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
