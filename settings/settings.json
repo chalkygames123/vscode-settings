@@ -17,7 +17,6 @@
 		"source.fixAll.eslint",
 		"source.fixAll.stylelint"
 	],
-	"editor.colorDecorators": false,
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
