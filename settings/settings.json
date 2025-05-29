@@ -40,7 +40,7 @@
 	"files.eol": "\n",
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
-	"git.diagnosticsCommitHook.Enabled": true,
+	"git.diagnosticsCommitHook.enabled": true,
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
