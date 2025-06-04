@@ -18,6 +18,7 @@
 	],
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.find.cursorMoveOnType": false,
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
