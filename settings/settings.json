@@ -95,6 +95,7 @@
 	},
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"github.copilot.nextEditSuggestions.fixes": true,
+	"gitlens.views.stashes.files.layout": "list",
 	"iconify.languageIds": [
 		"javascript",
 		"javascriptreact",
