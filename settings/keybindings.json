@@ -9,6 +9,11 @@
 		"command": "editor.action.goToTypeDefinition"
 	},
 	{
+		"key": "shift+cmd+right",
+		"command": "editor.action.inlineSuggest.acceptNextLine",
+		"when": "inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly"
+	},
+	{
 		"key": "ctrl+cmd+.",
 		"command": "editor.action.sourceAction"
 	},
