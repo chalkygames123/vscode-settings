@@ -47,6 +47,10 @@
 		"command": "workbench.action.closeEditorsToTheRight"
 	},
 	{
+		"key": "alt+cmd+9",
+		"command": "workbench.action.focusOtherSideEditor"
+	},
+	{
 		"key": "ctrl+shift+pageup",
 		"command": "workbench.action.moveEditorLeftInGroup"
 	},
