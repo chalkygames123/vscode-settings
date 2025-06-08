@@ -38,6 +38,16 @@
 		"command": "gitlens.views.commitDetails.focus"
 	},
 	{
+		"key": "cmd+i",
+		"command": "-inlineChat.start",
+		"when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+	},
+	{
+		"key": "alt+cmd+i",
+		"command": "inlineChat.start",
+		"when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+	},
+	{
 		"key": "ctrl+k g",
 		"command": "-textPowerTools.filterLinesIncludingString",
 		"when": "editorTextFocus"
