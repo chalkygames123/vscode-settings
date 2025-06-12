@@ -3,6 +3,7 @@
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	"chat.agent.enabled": true,
+	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
