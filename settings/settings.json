@@ -30,6 +30,7 @@
 	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
 	"editor.occurrencesHighlight": "multiFile",
+	"editor.parameterHints.cycle": false,
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.preview": true,
