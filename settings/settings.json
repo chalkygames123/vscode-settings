@@ -31,6 +31,7 @@
 	"editor.minimap.showSlider": "always",
 	"editor.occurrencesHighlight": "multiFile",
 	"editor.parameterHints.cycle": false,
+	"editor.parameterHints.enabled": false,
 	"editor.renderWhitespace": "all",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.preview": true,
