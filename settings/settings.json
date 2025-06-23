@@ -89,7 +89,6 @@
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
-	"github.copilot.chat.search.keywordSuggestions": true,
 	"github.copilot.chat.search.semanticTextResults": true,
 	"github.copilot.enable": {
 		"*": true,
