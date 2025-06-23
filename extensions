@@ -17,9 +17,6 @@ github.vscode-github-actions
 grapecity.gc-excelviewer
 mattpocock.ts-error-translator
 mechatroner.rainbow-csv
-ms-vscode-remote.remote-containers
-ms-vscode-remote.remote-ssh
-ms-vscode-remote.remote-ssh-edit
 ms-vscode.azure-repos
 ms-vscode.copilot-mermaid-diagram
 ms-vscode.makefile-tools
