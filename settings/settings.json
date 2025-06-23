@@ -139,7 +139,8 @@
 		"**/.vercel": true,
 		"**/.wrangler": true,
 		"**/cloudflare-env.d.ts": true,
-		"**/dist": true
+		"**/dist": true,
+		"**/worker-configuration.d.ts": true
 	},
 	"search.showLineNumbers": true,
 	"terminal.explorerKind": "external",
