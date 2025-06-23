@@ -5,6 +5,7 @@ coderabbit.coderabbit-vscode
 davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 deerawan.vscode-faker
+denoland.vscode-deno
 eamodio.gitlens
 ecmel.vscode-html-css
 editorconfig.editorconfig
