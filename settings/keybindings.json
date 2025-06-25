@@ -57,6 +57,10 @@
 		"command": "workbench.action.closeEditorsToTheRight"
 	},
 	{
+		"key": "shift+alt+cmd+9",
+		"command": "workbench.action.compareEditor.swapSides"
+	},
+	{
 		"key": "alt+cmd+9",
 		"command": "workbench.action.focusOtherSideEditor"
 	},
