@@ -1,4 +1,7 @@
 {
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
