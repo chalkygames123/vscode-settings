@@ -53,6 +53,10 @@
 	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
 	"explorer.incrementalNaming": "smart",
+	"files.associations": {
+		".dev.vars*": "ini",
+		".env.*": "ini"
+	},
 	"files.eol": "\n",
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
