@@ -9,6 +9,7 @@
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	"chat.agent.enabled": true,
+	"chat.mcp.autostart": "newAndOutdated",
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
