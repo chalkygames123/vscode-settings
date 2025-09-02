@@ -10,6 +10,7 @@
 	},
 	"chat.agent.enabled": true,
 	"chat.mcp.autostart": "newAndOutdated",
+	"chat.todoListTool.enabled": true,
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
