@@ -2,6 +2,9 @@
 	"[astro]": {
 		"editor.defaultFormatter": "astro-build.astro-vscode"
 	},
+	"[sql]": {
+		"editor.defaultFormatter": "ms-ossdata.vscode-pgsql"
+	},
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
