@@ -22,9 +22,12 @@
 	"editor.codeActionsOnSave": [
 		"source.addMissingImports.ts",
 		"source.sortImports.ts",
+		"source.organizeImports.biome",
 		"source.fixAll.ts",
 		"source.fixAll.eslint",
-		"source.fixAll.stylelint"
+		"source.fixAll.stylelint",
+		"source.action.useSortedKeys.biome",
+		"source.fixAll.biome"
 	],
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
