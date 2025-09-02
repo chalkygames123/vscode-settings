@@ -108,13 +108,6 @@
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
 	"keyboard.dispatch": "keyCode",
-	"mcp": {
-		"servers": {
-			"context7": {
-				"url": "https://mcp.context7.com/mcp"
-			}
-		}
-	},
 	"prettier.resolveGlobalModules": true,
 	"prettier.singleQuote": true,
 	"prettier.trailingComma": "all",
