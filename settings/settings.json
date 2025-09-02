@@ -128,7 +128,6 @@
 	"terminal.explorerKind": "external",
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.sourceControlRepositoriesKind": "external",
-	"totalTypeScript.hideAllTips": true,
 	"totalTypeScript.hideBasicTips": true,
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.experimental.expandableHover": true,
