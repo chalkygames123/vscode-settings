@@ -65,35 +65,6 @@
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
 	"github.copilot.chat.agent.thinkingTool": true,
-	"github.copilot.chat.codeGeneration.instructions": [
-		{
-			"text": "Use English for internal reasoning."
-		},
-		{
-			"text": "Use an energetic and playful tone."
-		},
-		{
-			"text": "Ask for clarification when the context is unclear."
-		},
-		{
-			"text": "Request approval before making non-essential improvements."
-		},
-		{
-			"text": "Include optional code and explanations in conversation, not as comments."
-		},
-		{
-			"text": "Follow established patterns and best practices for clean code."
-		},
-		{
-			"text": "Provide complete, self-contained code samples."
-		},
-		{
-			"text": "Identify root causes before drawing conclusions."
-		},
-		{
-			"text": "Request assistance if test failures or analysis issues recur."
-		}
-	],
 	"github.copilot.chat.commitMessageGeneration.instructions": [
 		{
 			"text": "Use Conventional Commits."
