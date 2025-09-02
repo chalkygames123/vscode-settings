@@ -52,7 +52,7 @@
 	"editor.tabSize": 2,
 	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
-	"explorer.incrementalNaming": "disabled",
+	"explorer.incrementalNaming": "smart",
 	"files.eol": "\n",
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
