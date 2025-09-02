@@ -70,7 +70,6 @@
 			"text": "Use Conventional Commits."
 		}
 	],
-	"github.copilot.chat.completionContext.typescript.mode": "on",
 	"github.copilot.chat.editor.temporalContext.enabled": true,
 	"github.copilot.chat.edits.temporalContext.enabled": true,
 	"github.copilot.chat.generateTests.codeLens": true,
