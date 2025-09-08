@@ -48,6 +48,11 @@
 		"when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
 	},
 	{
+		"key": "shift+cmd+e",
+		"command": "-pgsql.runQuery",
+		"when": "editorTextFocus && editorLangId == 'sql'"
+	},
+	{
 		"key": "ctrl+k g",
 		"command": "-textPowerTools.filterLinesIncludingString",
 		"when": "editorTextFocus"
