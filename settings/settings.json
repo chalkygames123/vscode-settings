@@ -140,6 +140,7 @@
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
 	"workbench.editor.alwaysShowEditorActions": true,
+	"workbench.editor.showTabIndex": true,
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
