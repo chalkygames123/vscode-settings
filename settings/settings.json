@@ -75,7 +75,6 @@
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
-	"github.copilot.chat.newWorkspace.useContext7": true,
 	"github.copilot.enable": {
 		"*": true,
 		"markdown": true,
