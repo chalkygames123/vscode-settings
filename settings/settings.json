@@ -9,6 +9,7 @@
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	"chat.agent.enabled": true,
+	"chat.agent.maxRequests": 128,
 	"chat.mcp.autostart": "newAndOutdated",
 	"chat.todoListTool.enabled": true,
 	"coderabbit.autoReviewMode": "prompt",
