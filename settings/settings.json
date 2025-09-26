@@ -109,6 +109,26 @@
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
 	"keyboard.dispatch": "keyCode",
+	"pgsql.connections": [
+		{
+			"applicationName": "vscode-pgsql",
+			"authenticationType": "SqlLogin",
+			"clientEncoding": "utf8",
+			"connectTimeout": 15,
+			"database": "postgres",
+			"expiresOn": 0,
+			"groupId": "E853FC5D-E169-4580-9F0B-E73A5645B261",
+			"id": "5C67E869-8CAA-4A99-B107-49EF8C7B686A",
+			"password": "",
+			"port": "54322",
+			"profileName": "Local Supabase Database",
+			"savePassword": true,
+			"server": "127.0.0.1",
+			"sshPassword": "",
+			"sslmode": "prefer",
+			"user": "postgres"
+		}
+	],
 	"prettier.prettierPath": "~/.local/share/pnpm/global/5/node_modules/prettier",
 	"prettier.printWidth": 120,
 	"prettier.resolveGlobalModules": true,
