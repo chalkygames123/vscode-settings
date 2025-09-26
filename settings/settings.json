@@ -129,6 +129,13 @@
 			"user": "postgres"
 		}
 	],
+	"pgsql.serverGroups": [
+		{
+			"id": "E853FC5D-E169-4580-9F0B-E73A5645B261",
+			"isDefault": true,
+			"name": "Servers"
+		}
+	],
 	"prettier.prettierPath": "~/.local/share/pnpm/global/5/node_modules/prettier",
 	"prettier.printWidth": 120,
 	"prettier.resolveGlobalModules": true,
