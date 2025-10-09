@@ -21,13 +21,12 @@
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
-		"source.addMissingImports.ts",
-		"source.sortImports.ts",
+		"source.action.useSortedKeys.biome",
+		"source.organizeImports.ts",
 		"source.organizeImports.biome",
 		"source.fixAll.ts",
 		"source.fixAll.eslint",
 		"source.fixAll.stylelint",
-		"source.action.useSortedKeys.biome",
 		"source.fixAll.biome"
 	],
 	"editor.cursorSurroundingLines": 7,
