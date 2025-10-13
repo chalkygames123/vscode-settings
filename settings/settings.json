@@ -21,13 +21,15 @@
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
-		"source.action.useSortedKeys.biome",
-		"source.organizeImports.ts",
-		"source.organizeImports.biome",
 		"source.fixAll.ts",
 		"source.fixAll.eslint",
 		"source.fixAll.stylelint",
-		"source.fixAll.biome"
+		"source.fixAll.biome",
+		"source.organizeImports.ts",
+		"source.organizeImports.biome",
+		"source.action.useSortedAttributes.biome",
+		"source.action.useSortedKeys.biome",
+		"source.action.useSortedProperties.biome"
 	],
 	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
