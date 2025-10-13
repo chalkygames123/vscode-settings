@@ -165,6 +165,7 @@
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
+	"workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.showTabIndex": true,
 	"workbench.editor.titleScrollbarVisibility": "visible",
