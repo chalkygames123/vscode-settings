@@ -10,7 +10,6 @@
 	},
 	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
-	"chat.todoListTool.enabled": true,
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
