@@ -42,6 +42,7 @@
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
 	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.inlineSuggest.experimental.showOnSuggestConflict": "whenSuggestListIsIncomplete",
 	"editor.linkedEditing": true,
 	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
