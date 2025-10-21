@@ -18,6 +18,7 @@
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.accessibilitySupport": "off",
 	"editor.aiStats.enabled": true,
+	"editor.autoClosingComments": "never",
 	"editor.autoClosingDelete": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
