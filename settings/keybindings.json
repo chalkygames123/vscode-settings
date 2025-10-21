@@ -5,6 +5,10 @@
 		"command": "cursorRedo"
 	},
 	{
+		"key": "ctrl+alt+cmd+.",
+		"command": "editor.action.fixAll"
+	},
+	{
 		"key": "ctrl+f12",
 		"command": "editor.action.goToTypeDefinition"
 	},
