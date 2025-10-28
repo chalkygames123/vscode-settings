@@ -1,11 +1,14 @@
 {
 	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[css]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[graphql]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[html]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[javascript]": {
@@ -30,6 +33,9 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[vue]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"chat.agent.enabled": true,
