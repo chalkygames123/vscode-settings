@@ -80,6 +80,7 @@
 	"editor.parameterHints.cycle": false,
 	"editor.parameterHints.enabled": false,
 	"editor.renderWhitespace": "all",
+	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "bottom",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.localityBonus": true,
