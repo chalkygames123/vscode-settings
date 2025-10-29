@@ -123,7 +123,6 @@
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"github.copilot.nextEditSuggestions.fixes": true,
 	"githubPullRequests.codingAgent.uiIntegration": true,
-	"gitlens.views.stashes.files.layout": "list",
 	"inlineChat.enableV2": true,
 	"inlineChat.hideOnRequest": true,
 	"inlineChat.lineEmptyHint": true,
