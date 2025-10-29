@@ -114,12 +114,6 @@
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
-	"github.copilot.enable": {
-		"*": true,
-		"markdown": true,
-		"plaintext": true,
-		"scminput": true
-	},
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"github.copilot.nextEditSuggestions.fixes": true,
 	"githubPullRequests.codingAgent.uiIntegration": true,
