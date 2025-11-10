@@ -92,6 +92,9 @@
 		"**/.husky/*": "shellscript"
 	},
 	"files.eol": "\n",
+	"files.readonlyInclude": {
+		"**/node_modules/**": true
+	},
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
 	"git.diagnosticsCommitHook.enabled": true,
