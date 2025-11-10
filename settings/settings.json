@@ -84,7 +84,6 @@
 	"editor.suggest.preview": true,
 	"editor.suggestSelection": "recentlyUsed",
 	"editor.tabSize": 2,
-	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
 	"explorer.incrementalNaming": "smart",
 	"files.associations": {
