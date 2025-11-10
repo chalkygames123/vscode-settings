@@ -170,7 +170,7 @@
 	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
-	"window.title": "${activeEditorLong}${separator}${activeEditorState}",
+	"window.title": "${rootName}${separator}${activeFolderMedium}",
 	"workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.showTabIndex": true,
