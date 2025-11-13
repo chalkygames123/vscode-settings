@@ -37,6 +37,7 @@
 	},
 	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
+	"chat.agent.thinking.collapsedTools": "all",
 	"chat.agentSessionsViewLocation": "view",
 	"chat.mcp.gallery.enabled": true,
 	"coderabbit.autoReviewMode": "prompt",
