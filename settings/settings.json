@@ -42,6 +42,7 @@
 	"chat.agentSessionsViewLocation": "view",
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
+	"chat.tools.terminal.outputLocation": "none",
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
