@@ -106,6 +106,7 @@
 	"git.fetchOnPull": true,
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
+	"git.verboseCommit": true,
 	"github.copilot.chat.agent.thinkingTool": true,
 	"github.copilot.chat.commitMessageGeneration.instructions": [
 		{
