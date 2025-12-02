@@ -122,7 +122,6 @@
 	"javascript.inlayHints.parameterTypes.enabled": true,
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
-	"keyboard.dispatch": "keyCode",
 	"pgsql.connections": [
 		{
 			"applicationName": "vscode-pgsql",
