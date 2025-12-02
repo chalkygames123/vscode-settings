@@ -122,7 +122,6 @@
 	"javascript.inlayHints.parameterTypes.enabled": true,
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
-	"prettier.resolveGlobalModules": true,
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
