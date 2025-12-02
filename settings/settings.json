@@ -149,6 +149,5 @@
 	},
 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
-	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
 	"workbench.tree.enableStickyScroll": true
 }
