@@ -65,7 +65,6 @@
 		"source.action.useSortedKeys.biome",
 		"source.action.useSortedProperties.biome"
 	],
-	"editor.cursorSurroundingLines": 7,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.cursorMoveOnType": false,
 	"editor.find.seedSearchStringFromSelection": "selection",
