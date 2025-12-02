@@ -15,62 +15,40 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Output a message to the console": {
+	"Log message at debug level": {
 		"body": [
-			"console.log(",
-			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] LOG:`,",
-			"\t`${1:$TM_SELECTED_TEXT}`,",
-			");"
-		],
-		"prefix": "log",
-		"scope": "javascript,javascriptreact,typescript,typescriptreact"
-	},
-	"Output a message at the debug log level": {
-		"body": [
-			"console.debug(",
-			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] DEBUG:`,",
-			"\t`${1:$TM_SELECTED_TEXT}`,",
-			");"
+			"console.debug(`${new Date().toLocaleTimeString([])} [DEBUG]:`, ${1:$TM_SELECTED_TEXT});"
 		],
 		"prefix": "debug",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Output a message at the info log level": {
+	"Log message at info level": {
 		"body": [
-			"console.info(",
-			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] INFO:`,",
-			"\t`${1:$TM_SELECTED_TEXT}`,",
-			");"
+			"console.info(t`${new Date().toLocaleTimeString([])} [INFO]:`, ${1:$TM_SELECTED_TEXT});"
 		],
 		"prefix": "info",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Output a message at the warning log level": {
+	"Log message at warning level": {
 		"body": [
-			"console.warn(",
-			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] WARNING:`,",
-			"\t`${1:$TM_SELECTED_TEXT}`,",
-			");"
+			"console.warn(t`${new Date().toLocaleTimeString([])} [WARNING]:`, ${1:$TM_SELECTED_TEXT});"
 		],
 		"prefix": "warn",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Output a message at the error log level": {
+	"Log message at error level": {
 		"body": [
-			"console.error(",
-			"\t`[${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}] ERROR:`,",
-			"\t`${1:$TM_SELECTED_TEXT}`,",
-			");"
+			"console.error(`${new Date().toLocaleTimeString([])} [ERROR]:`, ${1:$TM_SELECTED_TEXT});"
 		],
 		"prefix": "error",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Display a list of properties of an object": {
+	"Log object properties": {
 		"body": ["console.dir(${1:$TM_SELECTED_TEXT});"],
 		"prefix": "dir",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
-	"Display a tabular data as a table": {
+	"Log object as table": {
 		"body": ["console.table(${1:$TM_SELECTED_TEXT});"],
 		"prefix": "table",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
