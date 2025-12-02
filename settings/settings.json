@@ -147,7 +147,7 @@
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
-	"workbench.preferredDarkColorTheme": "GitHub Dark Colorblind (Beta)",
+	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
 	"workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
 	"workbench.startupEditor": "welcomePageInEmptyWorkbench",
 	"workbench.tree.enableStickyScroll": true
