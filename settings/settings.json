@@ -87,7 +87,6 @@
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.localityBonus": true,
 	"editor.suggest.preview": true,
-	"editor.suggestSelection": "recentlyUsed",
 	"editor.tabSize": 2,
 	"emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
 	"explorer.confirmUndo": "verbose",
