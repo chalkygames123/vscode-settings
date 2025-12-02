@@ -108,11 +108,6 @@
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
 	"git.verboseCommit": true,
-	"github.copilot.chat.commitMessageGeneration.instructions": [
-		{
-			"text": "Use Conventional Commits."
-		}
-	],
 	"github.copilot.chat.editor.temporalContext.enabled": true,
 	"github.copilot.chat.edits.temporalContext.enabled": true,
 	"github.copilot.chat.executePrompt.enabled": true,
