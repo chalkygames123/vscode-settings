@@ -144,7 +144,6 @@
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.pinnedTabSizing": "compact",
 	"workbench.editor.showTabIndex": true,
-	"workbench.editor.titleScrollbarVisibility": "visible",
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
