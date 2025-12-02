@@ -42,7 +42,6 @@
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinking.collapsedTools": "none",
 	"chat.agent.thinkingStyle": "collapsedPreview",
-	"chat.agentSessionsViewLocation": "view",
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"chat.tools.terminal.outputLocation": "none",
