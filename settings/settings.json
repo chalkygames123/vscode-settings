@@ -122,13 +122,6 @@
 	"javascript.inlayHints.parameterTypes.enabled": true,
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
-	"pgsql.serverGroups": [
-		{
-			"id": "E853FC5D-E169-4580-9F0B-E73A5645B261",
-			"isDefault": true,
-			"name": "Servers"
-		}
-	],
 	"prettier.prettierPath": "~/.local/share/pnpm/global/5/node_modules/prettier",
 	"prettier.resolveGlobalModules": true,
 	"prettier.singleQuote": true,
