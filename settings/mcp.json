@@ -39,6 +39,10 @@
 			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/ab12cd34-5678-90ef-1234-567890abcdef",
 			"version": "0.13.0"
 		},
+		"heroui-react": {
+			"command": "npx",
+			"args": ["-y", "@heroui/react-mcp@latest"]
+		},
 		"microsoft/playwright-mcp": {
 			"type": "stdio",
 			"command": "npx",
