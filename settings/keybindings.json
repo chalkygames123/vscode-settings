@@ -18,6 +18,10 @@
 		"when": "inlineSuggestionVisible && !accessibilityModeEnabled && !editorReadonly"
 	},
 	{
+		"key": "alt+\\",
+		"command": "editor.action.inlineSuggest.trigger"
+	},
+	{
 		"key": "ctrl+cmd+.",
 		"command": "editor.action.sourceAction"
 	},
