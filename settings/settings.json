@@ -71,7 +71,7 @@
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
-	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairs": "active",
 	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.inlineSuggest.experimental.showOnSuggestConflict": "whenSuggestListIsIncomplete",
 	"editor.inlineSuggest.showToolbar": "always",
