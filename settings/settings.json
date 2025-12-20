@@ -4,7 +4,6 @@
 	},
 	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
-	"chat.agent.thinking.collapsedTools": "none",
 	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
