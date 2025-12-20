@@ -48,6 +48,7 @@
 	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "bottom",
 	"editor.stickyScroll.enabled": true,
+	"editor.suggest.insertMode": "replace",
 	"editor.suggest.localityBonus": true,
 	"editor.suggest.preview": true,
 	"editor.suggest.selectionMode": "whenTriggerCharacter",
