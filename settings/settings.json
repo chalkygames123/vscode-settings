@@ -16,6 +16,7 @@
 	"editor.aiStats.enabled": true,
 	"editor.autoClosingComments": "never",
 	"editor.autoClosingDelete": "always",
+	"editor.autoClosingOvertype": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
 		"source.fixAll.ts",
