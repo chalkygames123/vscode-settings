@@ -89,6 +89,7 @@
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"scm.repositories.explorer": true,
+	"scm.repositories.selectionMode": "single",
 	"search.showLineNumbers": true,
 	"terminal.explorerKind": "external",
 	"terminal.external.osxExec": "Warp.app",
