@@ -54,6 +54,7 @@
 	"editor.suggest.selectionMode": "whenTriggerCharacter",
 	"editor.tabSize": 2,
 	"emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+	"emmet.triggerExpansionOnTab": true,
 	"explorer.confirmUndo": "verbose",
 	"explorer.incrementalNaming": "smart",
 	"files.associations": {
