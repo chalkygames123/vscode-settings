@@ -73,7 +73,6 @@
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
 	"git.verboseCommit": true,
-	"github.copilot.chat.edits.temporalContext.enabled": true,
 	"github.copilot.chat.generateTests.codeLens": true,
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
