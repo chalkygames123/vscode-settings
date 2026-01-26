@@ -9,6 +9,7 @@
 	"chat.mcp.gallery.enabled": true,
 	"chat.tools.terminal.outputLocation": "none",
 	"chat.useAgentSkills": true,
+	"chat.viewSessions.orientation": "stacked",
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
