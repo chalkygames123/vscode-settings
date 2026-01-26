@@ -1,67 +1,27 @@
 {
 	"servers": {
-		"chromedevtools/chrome-devtools-mcp": {
+		"Chrome DevTools": {
 			"type": "stdio",
 			"command": "npx",
 			"args": [
 				"chrome-devtools-mcp@latest",
 				"--browserUrl",
-				"${input:browser_url}",
+				"${input:chrome_devtools_browser_url}",
 				"--headless",
-				"${input:headless}",
+				"${input:chrome_devtools_headless}",
 				"--isolated",
-				"${input:isolated}",
+				"${input:chrome_devtools_isolated}",
 				"--channel",
-				"${input:chrome_channel}"
+				"${input:chrome_devtools_chrome_channel}"
 			],
 			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/13749964-2447-4c31-bcab-32731cced504",
 			"version": "0.0.1-seed"
 		},
-		"firecrawl/firecrawl-mcp-server": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "firecrawl-mcp@latest"],
-			"env": {
-				"FIRECRAWL_API_KEY": "${input:api_key}"
-			},
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/d586c74c-4aa1-4aa2-9aa3-046e58fcb84f",
-			"version": "1.0.0"
-		},
-		"getsentry/sentry-mcp": {
+		"Cloudflare": {
 			"type": "http",
-			"url": "https://mcp.sentry.dev/sse",
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/29bf7a98-e581-45da-a327-1ae890f17464",
-			"version": "1.0.0"
+			"url": "https://docs.mcp.cloudflare.com/mcp"
 		},
-		"github/github-mcp-server": {
-			"type": "http",
-			"url": "https://api.githubcopilot.com/mcp/",
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/ab12cd34-5678-90ef-1234-567890abcdef",
-			"version": "0.13.0"
-		},
-		"heroui-react": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "@heroui/react-mcp@latest"]
-		},
-		"microsoft/playwright-mcp": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["@playwright/mcp@latest"],
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/41b79849-7e6c-4fc7-82c0-5a611ea21523",
-			"version": "0.0.1-seed"
-		},
-		"next-devtools": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "next-devtools-mcp@latest"]
-		},
-		"shadcn": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["shadcn@latest", "mcp"]
-		},
-		"upstash/context7": {
+		"Context7": {
 			"type": "http",
 			"url": "https://mcp.context7.com/mcp",
 			"headers": {
@@ -70,35 +30,83 @@
 			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/dcec7705-b81b-4e0f-8615-8032604be7ad",
 			"version": "1.0.0"
 		},
-		"cloudflare": {
+		"Firecrawl": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "firecrawl-mcp@latest"],
+			"env": {
+				"FIRECRAWL_API_KEY": "${input:firecrawl_api_key}"
+			},
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/d586c74c-4aa1-4aa2-9aa3-046e58fcb84f",
+			"version": "1.0.0"
+		},
+		"GitHub": {
 			"type": "http",
-			"url": "https://docs.mcp.cloudflare.com/mcp"
+			"url": "https://api.githubcopilot.com/mcp/",
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/ab12cd34-5678-90ef-1234-567890abcdef",
+			"version": "0.13.0"
+		},
+		"HeroUI": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "@heroui/react-mcp@latest"]
+		},
+		"Next.js DevTools": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "next-devtools-mcp@latest"]
+		},
+		"Playwright": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["@playwright/mcp@latest"],
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/41b79849-7e6c-4fc7-82c0-5a611ea21523",
+			"version": "0.0.1-seed"
 		},
 		"React Aria": {
 			"type": "stdio",
 			"command": "npx",
 			"args": ["@react-aria/mcp@latest"]
-		}
+		},
+		"Sentry": {
+			"type": "http",
+			"url": "https://mcp.sentry.dev/mcp",
+			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/29bf7a98-e581-45da-a327-1ae890f17464",
+			"version": "1.0.0"
+		},
+		"shadcn": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["shadcn@latest", "mcp"]
+		},
 	},
 	"inputs": [
 		{
-			"id": "api_key",
-			"type": "promptString",
-			"description": "your API key",
-			"password": true
-		},
-		{
-			"id": "browser_url",
+			"id": "chrome_devtools_browser_url",
 			"type": "promptString",
 			"description": "Optional: connect to an already-running Chrome (remote debugging / port-forward). Example: http://127.0.0.1:9222",
 			"password": false
 		},
 		{
-			"id": "chrome_channel",
+			"id": "chrome_devtools_chrome_channel",
 			"type": "promptString",
 			"description": "Chrome channel: stable | canary | beta | dev (default: stable).",
 			"password": false,
 			"default": "stable"
+		},
+		{
+			"id": "chrome_devtools_headless",
+			"type": "promptString",
+			"description": "Run Chrome headless (true/false). Default: false",
+			"password": false,
+			"default": "false"
+		},
+		{
+			"id": "chrome_devtools_isolated",
+			"type": "promptString",
+			"description": "Use a temporary user-data-dir (true/false). Default: false",
+			"password": false,
+			"default": "false"
 		},
 		{
 			"id": "context7_api_key",
@@ -107,18 +115,10 @@
 			"password": true
 		},
 		{
-			"id": "headless",
+			"id": "firecrawl_api_key",
 			"type": "promptString",
-			"description": "Run Chrome headless (true/false). Default: false",
-			"password": false,
-			"default": "false"
-		},
-		{
-			"id": "isolated",
-			"type": "promptString",
-			"description": "Use a temporary user-data-dir (true/false). Default: false",
-			"password": false,
-			"default": "false"
+			"description": "your API key",
+			"password": true
 		}
 	]
 }
