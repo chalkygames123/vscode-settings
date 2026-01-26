@@ -79,6 +79,10 @@
 			"command": "npx",
 			"args": ["shadcn@latest", "mcp"]
 		},
+		"TanStack": {
+			"url": "https://tanstack.com/api/mcp",
+			"type": "http"
+		}
 	},
 	"inputs": [
 		{
