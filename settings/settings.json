@@ -1,4 +1,7 @@
 {
+	"[jsonc]": {
+		"prettier.trailingComma": "none"
+	},
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
