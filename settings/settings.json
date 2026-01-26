@@ -29,7 +29,7 @@
 		"source.action.useSortedKeys.biome",
 		"source.action.useSortedProperties.biome"
 	],
-	"editor.defaultFormatter": "prettier.prettier-vscode",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.cursorMoveOnType": false,
 	"editor.find.seedSearchStringFromSelection": "selection",
 	"editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
