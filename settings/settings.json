@@ -8,6 +8,7 @@
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"chat.tools.terminal.outputLocation": "none",
+	"chat.useAgentSkills": true,
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
