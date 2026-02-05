@@ -5,6 +5,7 @@
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
+	"biome.requireConfiguration": false,
 	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinkingStyle": "collapsedPreview",
