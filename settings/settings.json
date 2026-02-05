@@ -12,7 +12,6 @@
 	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
-	"chat.tools.terminal.outputLocation": "none",
 	"chat.useAgentSkills": true,
 	"chat.viewSessions.orientation": "stacked",
 	"coderabbit.autoReviewMode": "prompt",
