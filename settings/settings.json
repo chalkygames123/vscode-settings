@@ -119,6 +119,7 @@
 	"workbench.editorAssociations": {
 		"*.svg": "default"
 	},
+	"workbench.list.defaultFindMatchType": "contiguous",
 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"workbench.settings.enableNaturalLanguageSearch": false,
