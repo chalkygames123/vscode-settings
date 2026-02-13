@@ -16,7 +16,6 @@
 	"chat.extensionUnification.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"chat.useAgentSkills": true,
-	"chat.viewSessions.orientation": "stacked",
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
