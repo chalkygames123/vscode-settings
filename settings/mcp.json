@@ -1,127 +1,83 @@
 {
 	"servers": {
-		"Chrome DevTools": {
-			"type": "stdio",
-			"command": "npx",
-			"args": [
-				"chrome-devtools-mcp@latest",
-				"--browserUrl",
-				"${input:chrome_devtools_browser_url}",
-				"--headless",
-				"${input:chrome_devtools_headless}",
-				"--isolated",
-				"${input:chrome_devtools_isolated}",
-				"--channel",
-				"${input:chrome_devtools_chrome_channel}"
-			],
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/13749964-2447-4c31-bcab-32731cced504",
-			"version": "0.0.1-seed"
+		"io.github.ChromeDevTools/chrome-devtools-mcp": {
+			"command": "pnpx",
+			"args": ["chrome-devtools-mcp@latest"],
+			"gallery": "https://api.mcp.github.com"
 		},
-		"Cloudflare": {
-			"type": "http",
-			"url": "https://docs.mcp.cloudflare.com/mcp"
-		},
-		"Context7": {
-			"type": "http",
-			"url": "https://mcp.context7.com/mcp",
-			"headers": {
-				"CONTEXT7_API_KEY": "${input:context7_api_key}"
-			},
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/dcec7705-b81b-4e0f-8615-8032604be7ad",
-			"version": "1.0.0"
-		},
-		"Firecrawl": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "firecrawl-mcp@latest"],
+		"io.github.upstash/context7": {
+			"command": "pnpx",
+			"args": ["@upstash/context7-mcp@latest"],
 			"env": {
-				"FIRECRAWL_API_KEY": "${input:firecrawl_api_key}"
+				"CONTEXT7_API_KEY": "${input:CONTEXT7_API_KEY}"
 			},
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/d586c74c-4aa1-4aa2-9aa3-046e58fcb84f",
-			"version": "1.0.0"
+			"gallery": "https://api.mcp.github.com"
 		},
-		"GitHub": {
+		"firecrawl/firecrawl-mcp-server": {
+			"command": "pnpx",
+			"args": ["firecrawl-mcp@latest"],
+			"env": {
+				"FIRECRAWL_API_KEY": "${input:FIRECRAWL_API_KEY}"
+			},
+			"gallery": "https://api.mcp.github.com"
+		},
+		"io.github.github/github-mcp-server": {
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp/",
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/ab12cd34-5678-90ef-1234-567890abcdef",
-			"version": "0.13.0"
+			"gallery": "https://api.mcp.github.com"
 		},
-		"HeroUI": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "@heroui/react-mcp@latest"]
+		"heroui-react": {
+			"command": "pnpx",
+			"args": ["@heroui/react-mcp@latest"]
 		},
-		"Next.js DevTools": {
-			"type": "stdio",
-			"command": "npx",
-			"args": ["-y", "next-devtools-mcp@latest"]
-		},
-		"Playwright": {
-			"type": "stdio",
-			"command": "npx",
+		"microsoft/playwright-mcp": {
+			"command": "pnpx",
 			"args": ["@playwright/mcp@latest"],
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/41b79849-7e6c-4fc7-82c0-5a611ea21523",
-			"version": "0.0.1-seed"
+			"gallery": "https://api.mcp.github.com"
 		},
 		"React Aria": {
-			"type": "stdio",
-			"command": "npx",
+			"command": "pnpx",
 			"args": ["@react-aria/mcp@latest"]
 		},
-		"Sentry": {
-			"type": "http",
-			"url": "https://mcp.sentry.dev/mcp",
-			"gallery": "https://api.mcp.github.com/2025-09-15/v0/servers/29bf7a98-e581-45da-a327-1ae890f17464",
-			"version": "1.0.0"
+		"io.github.getsentry/sentry-mcp": {
+			"command": "pnpx",
+			"args": ["@sentry/mcp-server@latest"],
+			"env": {
+				"SENTRY_ACCESS_TOKEN": "${input:SENTRY_ACCESS_TOKEN}"
+			},
+			"gallery": "https://api.mcp.github.com"
 		},
 		"shadcn": {
-			"type": "stdio",
-			"command": "npx",
+			"command": "pnpx",
 			"args": ["shadcn@latest", "mcp"]
 		},
-		"TanStack": {
-			"url": "https://tanstack.com/api/mcp",
-			"type": "http"
+		"com.supabase/mcp": {
+			"type": "http",
+			"url": "https://mcp.supabase.com/mcp",
+			"gallery": "https://api.mcp.github.com"
+		},
+		"tanstack": {
+			"command": "pnpx",
+			"args": ["@tanstack/cli", "mcp"]
 		}
 	},
 	"inputs": [
 		{
-			"id": "chrome_devtools_browser_url",
+			"id": "CONTEXT7_API_KEY",
 			"type": "promptString",
-			"description": "Optional: connect to an already-running Chrome (remote debugging / port-forward). Example: http://127.0.0.1:9222",
-			"password": false
-		},
-		{
-			"id": "chrome_devtools_chrome_channel",
-			"type": "promptString",
-			"description": "Chrome channel: stable | canary | beta | dev (default: stable).",
-			"password": false,
-			"default": "stable"
-		},
-		{
-			"id": "chrome_devtools_headless",
-			"type": "promptString",
-			"description": "Run Chrome headless (true/false). Default: false",
-			"password": false,
-			"default": "false"
-		},
-		{
-			"id": "chrome_devtools_isolated",
-			"type": "promptString",
-			"description": "Use a temporary user-data-dir (true/false). Default: false",
-			"password": false,
-			"default": "false"
-		},
-		{
-			"id": "context7_api_key",
-			"type": "promptString",
-			"description": "Context7 API key (optional; increases rate limits). Get one at https://context7.com/dashboard",
+			"description": "API key for authentication",
 			"password": true
 		},
 		{
-			"id": "firecrawl_api_key",
+			"id": "FIRECRAWL_API_KEY",
 			"type": "promptString",
 			"description": "your API key",
+			"password": true
+		},
+		{
+			"id": "SENTRY_ACCESS_TOKEN",
+			"type": "promptString",
+			"description": "Your Sentry user authentication token",
 			"password": true
 		}
 	]
