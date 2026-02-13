@@ -9,7 +9,6 @@
 	"biome.suggestInstallingGlobally": false,
 	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
-	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.agentSkillsLocations": {
 		".claude/skills": false,
 		"~/.claude/skills": false
