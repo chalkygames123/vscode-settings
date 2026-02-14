@@ -13,6 +13,7 @@
 	},
 	"chat.customAgentInSubagent.enabled": true,
 	"chat.extensionUnification.enabled": true,
+	"chat.tools.terminal.sandbox.enabled": true,
 	"chat.useAgentSkills": true,
 	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
