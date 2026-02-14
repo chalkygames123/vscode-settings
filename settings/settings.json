@@ -52,6 +52,9 @@
 	"editor.occurrencesHighlight": "multiFile",
 	"editor.parameterHints.cycle": false,
 	"editor.parameterHints.enabled": false,
+	"editor.quickSuggestions": {
+		"other": "off"
+	},
 	"editor.renderWhitespace": "all",
 	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "bottom",
