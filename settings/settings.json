@@ -6,7 +6,6 @@
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	"chat.agent.enabled": true,
-	"chat.agent.maxRequests": 128,
 	"chat.agentSkillsLocations": {
 		".claude/skills": false,
 		"~/.claude/skills": false
