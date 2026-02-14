@@ -11,6 +11,7 @@
 		".claude/skills": false,
 		"~/.claude/skills": false
 	},
+	"chat.customAgentInSubagent.enabled": true,
 	"chat.extensionUnification.enabled": true,
 	"chat.useAgentSkills": true,
 	"coderabbit.autoReviewMode": "prompt",
