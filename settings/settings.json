@@ -119,6 +119,7 @@
 	"window.confirmBeforeClose": "keyboardOnly",
 	"window.title": "${rootName}${separator}${activeFolderMedium}",
 	"workbench.browser.dataStorage": "workspace",
+	"workbench.browser.openLocalhostLinks": true,
 	"workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
 	"workbench.editor.alwaysShowEditorActions": true,
 	"workbench.editor.pinnedTabSizing": "compact",
