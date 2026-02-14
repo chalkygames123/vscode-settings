@@ -42,7 +42,6 @@
 	"editor.guides.bracketPairs": "active",
 	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.inlineSuggest.showToolbar": "always",
-	"editor.inlineSuggest.suppressSuggestions": true,
 	"editor.linkedEditing": true,
 	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
