@@ -103,6 +103,7 @@
 	"scm.repositories.explorer": true,
 	"scm.repositories.selectionMode": "single",
 	"search.showLineNumbers": true,
+	"simpleBrowser.useIntegratedBrowser": true,
 	"terminal.explorerKind": "external",
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.sourceControlRepositoriesKind": "external",
