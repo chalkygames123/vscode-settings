@@ -1,45 +1,21 @@
 {
+	"inputs": [
+		{
+			"id": "SENTRY_ACCESS_TOKEN",
+			"type": "promptString",
+			"description": "Your Sentry user authentication token",
+			"password": true
+		}
+	],
 	"servers": {
 		"io.github.ChromeDevTools/chrome-devtools-mcp": {
+			"type": "stdio",
 			"command": "pnpx",
 			"args": ["chrome-devtools-mcp@latest"],
 			"gallery": "https://api.mcp.github.com"
 		},
-		"io.github.upstash/context7": {
-			"command": "pnpx",
-			"args": ["@upstash/context7-mcp@latest"],
-			"env": {
-				"CONTEXT7_API_KEY": "${input:CONTEXT7_API_KEY}"
-			},
-			"gallery": "https://api.mcp.github.com"
-		},
-		"firecrawl/firecrawl-mcp-server": {
-			"command": "pnpx",
-			"args": ["firecrawl-mcp@latest"],
-			"env": {
-				"FIRECRAWL_API_KEY": "${input:FIRECRAWL_API_KEY}"
-			},
-			"gallery": "https://api.mcp.github.com"
-		},
-		"io.github.github/github-mcp-server": {
-			"type": "http",
-			"url": "https://api.githubcopilot.com/mcp/",
-			"gallery": "https://api.mcp.github.com"
-		},
-		"heroui-react": {
-			"command": "pnpx",
-			"args": ["@heroui/react-mcp@latest"]
-		},
-		"microsoft/playwright-mcp": {
-			"command": "pnpx",
-			"args": ["@playwright/mcp@latest"],
-			"gallery": "https://api.mcp.github.com"
-		},
-		"React Aria": {
-			"command": "pnpx",
-			"args": ["@react-aria/mcp@latest"]
-		},
 		"io.github.getsentry/sentry-mcp": {
+			"type": "stdio",
 			"command": "pnpx",
 			"args": ["@sentry/mcp-server@latest"],
 			"env": {
@@ -47,38 +23,15 @@
 			},
 			"gallery": "https://api.mcp.github.com"
 		},
-		"shadcn": {
-			"command": "pnpx",
-			"args": ["shadcn@latest", "mcp"]
-		},
 		"com.supabase/mcp": {
 			"type": "http",
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
 		"tanstack": {
+			"type": "stdio",
 			"command": "pnpx",
 			"args": ["@tanstack/cli", "mcp"]
 		}
-	},
-	"inputs": [
-		{
-			"id": "CONTEXT7_API_KEY",
-			"type": "promptString",
-			"description": "API key for authentication",
-			"password": true
-		},
-		{
-			"id": "FIRECRAWL_API_KEY",
-			"type": "promptString",
-			"description": "your API key",
-			"password": true
-		},
-		{
-			"id": "SENTRY_ACCESS_TOKEN",
-			"type": "promptString",
-			"description": "Your Sentry user authentication token",
-			"password": true
-		}
-	]
+	}
 }
