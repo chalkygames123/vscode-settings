@@ -133,5 +133,6 @@
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"workbench.settings.enableNaturalLanguageSearch": false,
 	"workbench.startupEditor": "none",
-	"workbench.tree.enableStickyScroll": true
+	"workbench.tree.enableStickyScroll": true,
+	"workbench.tree.expandMode": "doubleClick"
 }
