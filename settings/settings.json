@@ -79,7 +79,6 @@
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": "active",
-	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.linkedEditing": true,
 	"editor.maxTokenizationLineLength": 1000,
