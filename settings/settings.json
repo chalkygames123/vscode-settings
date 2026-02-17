@@ -146,6 +146,7 @@
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.sourceControlRepositoriesKind": "external",
 	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.inlayHints.enumMemberValues.enabled": true,
 	"typescript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"typescript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterTypes.enabled": true,
