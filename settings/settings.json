@@ -171,6 +171,7 @@
 	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"workbench.settings.enableNaturalLanguageSearch": false,
+	"workbench.settings.openDefaultSettings": true,
 	"workbench.startupEditor": "none",
 	"workbench.tree.enableStickyScroll": true,
 	"workbench.tree.expandMode": "doubleClick"
