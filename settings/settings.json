@@ -122,6 +122,10 @@
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.searchSubagent.enabled": true,
+	"github.copilot.enable": {
+		"markdown": true,
+		"scminput": true
+	},
 	"github.copilot.nextEditSuggestions.enabled": true,
 	"github.copilot.nextEditSuggestions.fixes": true,
 	"githubPullRequests.codingAgent.uiIntegration": true,
