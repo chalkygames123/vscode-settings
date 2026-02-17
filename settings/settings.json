@@ -39,7 +39,6 @@
 	"[vue]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"chat.agent.enabled": true,
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinking.collapsedTools": "withThinking",
 	"chat.agentSkillsLocations": {
@@ -47,11 +46,8 @@
 		"~/.claude/skills": false
 	},
 	"chat.customAgentInSubagent.enabled": true,
-	"chat.extensionUnification.enabled": true,
 	"chat.tools.terminal.sandbox.enabled": true,
-	"chat.useAgentSkills": true,
 	"chat.viewSessions.orientation": "stacked",
-	"coderabbit.autoReviewMode": "prompt",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
@@ -92,7 +88,6 @@
 	"editor.renderWhitespace": "all",
 	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "bottom",
-	"editor.stickyScroll.enabled": true,
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.localityBonus": true,
 	"editor.suggest.preview": true,
@@ -125,9 +120,6 @@
 		"markdown": true,
 		"scminput": true
 	},
-	"github.copilot.nextEditSuggestions.enabled": true,
-	"github.copilot.nextEditSuggestions.fixes": true,
-	"githubPullRequests.codingAgent.uiIntegration": true,
 	"inlineChat.enableV2": true,
 	"javascript.inlayHints.functionLikeReturnTypes.enabled": true,
 	"javascript.inlayHints.parameterNames.enabled": "all",
@@ -172,6 +164,5 @@
 	"workbench.settings.enableNaturalLanguageSearch": false,
 	"workbench.settings.openDefaultSettings": true,
 	"workbench.startupEditor": "none",
-	"workbench.tree.enableStickyScroll": true,
 	"workbench.tree.expandMode": "doubleClick"
 }
