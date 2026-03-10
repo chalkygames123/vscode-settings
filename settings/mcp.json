@@ -42,7 +42,7 @@
 		"tanstack": {
 			"type": "stdio",
 			"command": "pnpx",
-			"args": ["@tanstack/cli", "mcp"]
+			"args": ["@tanstack/cli@latest", "mcp"]
 		}
 	},
 	"inputs": [
