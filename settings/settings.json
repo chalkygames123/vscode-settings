@@ -12,7 +12,6 @@
 		"~/.claude/skills": false
 	},
 	"chat.customAgentInSubagent.enabled": true,
-	"chat.viewSessions.orientation": "stacked",
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
