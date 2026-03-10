@@ -10,6 +10,10 @@
 			"args": ["chrome-devtools-mcp@latest"],
 			"gallery": "https://api.mcp.github.com"
 		},
+		"drawio": {
+			"type": "http",
+			"url": "https://mcp.draw.io/mcp"
+		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
 			"command": "pnpx",
