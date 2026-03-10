@@ -1,5 +1,9 @@
 {
 	"servers": {
+		"awsdac-mcp-server": {
+			"type": "stdio",
+			"command": "/opt/homebrew/bin/awsdac-mcp-server"
+		},
 		"io.github.ChromeDevTools/chrome-devtools-mcp": {
 			"type": "stdio",
 			"command": "pnpx",
