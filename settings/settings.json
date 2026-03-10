@@ -28,6 +28,7 @@
 		"source.fixAll.eslint",
 		"source.fixAll.stylelint",
 		"source.fixAll.biome",
+		"source.fixAll.oxc",
 		"source.organizeImports.ts",
 		"source.organizeImports.biome",
 		"source.action.useSortedAttributes.biome",
