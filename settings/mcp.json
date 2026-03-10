@@ -1,12 +1,4 @@
 {
-	"inputs": [
-		{
-			"id": "SENTRY_ACCESS_TOKEN",
-			"type": "promptString",
-			"description": "Your Sentry user authentication token",
-			"password": true
-		}
-	],
 	"servers": {
 		"io.github.ChromeDevTools/chrome-devtools-mcp": {
 			"type": "stdio",
@@ -33,5 +25,13 @@
 			"command": "pnpx",
 			"args": ["@tanstack/cli", "mcp"]
 		}
-	}
+	},
+	"inputs": [
+		{
+			"id": "SENTRY_ACCESS_TOKEN",
+			"type": "promptString",
+			"description": "Your Sentry user authentication token",
+			"password": true
+		}
+	]
 }
