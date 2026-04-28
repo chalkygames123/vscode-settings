@@ -82,7 +82,6 @@
 	"javascript.inlayHints.propertyDeclarationTypes.enabled": true,
 	"javascript.inlayHints.variableTypes.enabled": true,
 	"oxc.fixKind": "all",
-	"oxc.unusedDisableDirectives": "deny",
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
