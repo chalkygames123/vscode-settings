@@ -16,6 +16,7 @@
 	"chat.mcp.gallery.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
 	"chat.useCustomAgentHooks": true,
+	"chat.useNestedAgentsMdFiles": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
