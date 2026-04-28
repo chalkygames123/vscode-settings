@@ -92,6 +92,7 @@
 	"js/ts.preferences.autoImportSpecifierExcludeRegexes": ["^console$"],
 	"js/ts.preferences.preferTypeOnlyAutoImports": true,
 	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"keyboard.dispatch": "keyCode",
 	"oxc.fixKind": "all",
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
