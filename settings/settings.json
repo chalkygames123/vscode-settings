@@ -14,6 +14,7 @@
 	"chat.customAgentInSubagent.enabled": true,
 	"chat.experimental.incrementalRendering.enabled": true,
 	"chat.mcp.gallery.enabled": true,
+	"chat.subagents.allowInvocationsFromSubagents": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
