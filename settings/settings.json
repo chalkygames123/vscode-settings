@@ -44,7 +44,6 @@
 		"other": "off"
 	},
 	"editor.renderWhitespace": "all",
-	"editor.scrollBeyondLastLine": false,
 	"editor.snippetSuggestions": "bottom",
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.localityBonus": true,
