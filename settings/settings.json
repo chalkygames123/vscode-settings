@@ -12,6 +12,7 @@
 		"~/.claude/skills": false
 	},
 	"chat.customAgentInSubagent.enabled": true,
+	"chat.experimental.incrementalRendering.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
