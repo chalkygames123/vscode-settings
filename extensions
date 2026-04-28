@@ -32,6 +32,7 @@ supabase.postgrestools
 supabase.vscode-supabase-extension
 tamasfe.even-better-toml
 timonwong.shellcheck
+typescriptteam.native-preview
 usernamehw.errorlens
 vitest.explorer
 wakatime.vscode-wakatime
