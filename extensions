@@ -27,7 +27,6 @@ supabase.postgrestools
 supabase.vscode-supabase-extension
 tamasfe.even-better-toml
 timonwong.shellcheck
-unifiedjs.vscode-mdx
 usernamehw.errorlens
 vitest.explorer
 wakatime.vscode-wakatime
