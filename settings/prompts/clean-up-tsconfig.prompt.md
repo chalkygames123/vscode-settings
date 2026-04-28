@@ -1,12 +1,11 @@
 ---
+name: clean-up-tsconfig
 description: Clean up TSConfig by removing redundant compiler options.
 ---
 
-# TSConfig コンパイラーオプションの暗示関係一覧
+TypeScript コンパイラーオプションの暗示関係がまとめられた以下のリファレンスに基づき、冗長なオプション指定を完全に削除せよ。
 
-以下は、TypeScript 5.9 の TSConfig において、あるコンパイラーオプションの設定値が他のコンパイラーオプションのデフォルト値を暗示（imply）するケースの網羅的なリストです。これらに基づいて、冗長なオプションの指定を完全に削除してください。
-
-## 1. `strict: true` による暗示
+## `strict: true` による暗示
 
 <!-- Type Checking -->
 
@@ -22,7 +21,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `noImplicitThis`               | `true`       |
 | `useUnknownInCatchVariables`   | `true`       |
 
-## 2. `target` による `module` の暗示
+## `target` による `module` の暗示
 
 <!-- Language and Environment → Modules -->
 
@@ -31,7 +30,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `es5`       | `commonjs`             |
 | その他      | `es6`/`es2015`         |
 
-## 3. `module` による `target` の暗示
+## `module` による `target` の暗示
 
 <!-- Modules → Language and Environment -->
 
@@ -41,7 +40,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `nodenext`  | `esnext`               |
 | その他      | `es5`                  |
 
-## 4. `module` による `moduleResolution` の暗示
+## `module` による `moduleResolution` の暗示
 
 <!-- Modules → Modules -->
 
@@ -55,7 +54,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `preserve`  | `bundler`                        |
 | その他      | `classic`                        |
 
-## 5. `moduleResolution` による `resolvePackageJsonExports` の暗示
+## `moduleResolution` による `resolvePackageJsonExports` の暗示
 
 <!-- Modules → Modules -->
 
@@ -63,7 +62,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :---------------------------- | :---------------------------------------- |
 | `node16`/`nodenext`/`bundler` | `true`                                    |
 
-## 6. `moduleResolution` による `resolvePackageJsonImports` の暗示
+## `moduleResolution` による `resolvePackageJsonImports` の暗示
 
 <!-- Modules → Modules -->
 
@@ -71,7 +70,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :---------------------------- | :---------------------------------------- |
 | `node16`/`nodenext`/`bundler` | `true`                                    |
 
-## 7. `rewriteRelativeImportExtensions: true` による暗示
+## `rewriteRelativeImportExtensions: true` による暗示
 
 <!-- Modules -->
 
@@ -79,7 +78,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :--------------------------- | :----------- |
 | `allowImportingTsExtensions` | `true`       |
 
-## 8. `module` による `esModuleInterop` の暗示
+## `module` による `esModuleInterop` の暗示
 
 <!-- Modules → Interop Constraints -->
 
@@ -87,7 +86,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :----------------------------- | :------------------------------ |
 | `node16`/`nodenext`/`preserve` | `true`                          |
 
-## 9. `esModuleInterop: true` による暗示
+## `esModuleInterop: true` による暗示
 
 <!-- Interop Constraints -->
 
@@ -95,7 +94,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :----------------------------- | :----------- |
 | `allowSyntheticDefaultImports` | `true`       |
 
-## 10. `module` による `allowSyntheticDefaultImports` の暗示
+## `module` による `allowSyntheticDefaultImports` の暗示
 
 <!-- Modules → Interop Constraints -->
 
@@ -103,7 +102,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :---------- | :------------------------------------------- |
 | `system`    | `true`                                       |
 
-## 11. `moduleResolution` による `allowSyntheticDefaultImports` の暗示
+## `moduleResolution` による `allowSyntheticDefaultImports` の暗示
 
 <!-- Modules → Interop Constraints -->
 
@@ -111,7 +110,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :-------------------- | :------------------------------------------- |
 | `bundler`             | `true`                                       |
 
-## 12. `verbatimModuleSyntax: true` による暗示
+## `verbatimModuleSyntax: true` による暗示
 
 <!-- Interop Constraints -->
 
@@ -119,7 +118,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :------------------- | :----------- |
 | `isolatedModules`    | `true`       |
 
-## 13. `isolatedModules: true` による暗示
+## `isolatedModules: true` による暗示
 
 <!-- Interop Constraints -->
 
@@ -127,7 +126,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :------------------- | :----------- |
 | `preserveConstEnums` | `true`       |
 
-## 14. `target` による `lib` の暗示
+## `target` による `lib` の暗示
 
 <!-- Language and Environment → Language and Environment -->
 
@@ -145,11 +144,12 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `es2022`       | `["ES2022", "DOM", "WebWorker.ImportScripts, "ScriptHost", "DOM.Iterable", "DOM.AsyncIterable"]` |
 | `es2023`       | `["ES2023", "DOM", "WebWorker.ImportScripts, "ScriptHost", "DOM.Iterable", "DOM.AsyncIterable"]` |
 | `es2024`       | `["ES2024", "DOM", "WebWorker.ImportScripts, "ScriptHost", "DOM.Iterable", "DOM.AsyncIterable"]` |
+| `es2025`       | `["ES2025", "DOM", "WebWorker.ImportScripts, "ScriptHost", "DOM.Iterable", "DOM.AsyncIterable"]` |
 | `esnext`       | `["ESNext", "DOM", "WebWorker.ImportScripts, "ScriptHost", "DOM.Iterable", "DOM.AsyncIterable"]` |
 
 出典: https://deepwiki.com/search/tsconfig-target-es3-es5-es6es2_f3e6dcb0-7a13-4046-80dc-1f4b588e3a6c
 
-## 15. `target` による `useDefineForClassFields` の暗示
+## `target` による `useDefineForClassFields` の暗示
 
 <!-- Language and Environment → Language and Environment -->
 
@@ -157,7 +157,7 @@ description: Clean up TSConfig by removing redundant compiler options.
 | :------------------------------- | :-------------------------------------- |
 | `es2022` 以上（`esnext` を含む） | `true`                                  |
 
-## 16. `composite: true` による暗示
+## `composite: true` による暗示
 
 <!-- Projects -->
 
@@ -166,3 +166,35 @@ description: Clean up TSConfig by removing redundant compiler options.
 | `declaration`        | `true`                                   |
 | `incremental`        | `true`                                   |
 | `rootDir`            | `tsconfig.json` が存在するディレクトリー |
+
+## TypeScript 6.0
+
+TypeScript 6.0 を使用するプロジェクトでは以下の変更を考慮する。
+
+### `DOM` ライブラリー
+
+`DOM.Iterable` および `DOM.AsyncIterable` の内容は `DOM` に統合された。
+
+### デフォルト値
+
+| オプション                     | 旧デフォルト | 新デフォルト |
+| :----------------------------- | :----------- | :----------- |
+| `strict`                       | `false`      | `true`       |
+| `module`                       | `es6`        | `esnext`     |
+| `target`                       | `es5`        | `es2025`     |
+| `noUncheckedSideEffectImports` | `false`      | `true`       |
+| `rootDir`                      | 推論         | `.`          |
+| `libReplacement`               | `true`       | `false`      |
+| `types`                        | `["*"]`      | `[]`         |
+
+### 非推奨
+
+- `target: "es5"`
+- `moduleResolution: "node"` / `"node10"` / `"classic"`
+- `module: "amd"` / `"umd"` / `"systemjs"` / `"none"`
+- `baseUrl`
+- `esModuleInterop: false`
+- `allowSyntheticDefaultImports: false`
+- `alwaysStrict: false`
+- `outFile`
+- `downlevelIteration`
