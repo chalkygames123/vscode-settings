@@ -42,10 +42,6 @@
 		"command": "editor.emmet.action.matchTag"
 	},
 	{
-		"key": "ctrl+cmd+g",
-		"command": "gitlens.views.commitDetails.focus"
-	},
-	{
 		"key": "cmd+i",
 		"command": "-inlineChat.askInChat",
 		"when": "config.inlineChat.askInChat && editorFocus && inlineChatFileBelongsToChat && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || config.inlineChat.askInChat && editorFocus && inlineChatFileBelongsToChat && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || config.inlineChat.askInChat && editorFocus && inlineChatFileBelongsToChat && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook'"
