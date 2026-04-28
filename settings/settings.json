@@ -108,7 +108,6 @@
 	"workbench.browser.openLocalhostLinks": true,
 	"workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
 	"workbench.editor.alwaysShowEditorActions": true,
-	"workbench.editor.pinnedTabSizing": "compact",
 	"workbench.editor.showTabIndex": true,
 	"workbench.editor.swipeToNavigate": true,
 	"workbench.editorAssociations": {
