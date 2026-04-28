@@ -17,13 +17,12 @@
 		"com.figma.mcp/mcp": {
 			"type": "http",
 			"url": "https://mcp.figma.com/mcp",
-			"gallery": "https://api.mcp.github.com",
-			"version": "1.0.3"
+			"gallery": "https://api.mcp.github.com"
 		},
-		"next-devtools": {
+		"heroui-react": {
 			"type": "stdio",
 			"command": "pnpx",
-			"args": ["next-devtools-mcp@latest"]
+			"args": ["@heroui/react-mcp@latest"]
 		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
@@ -39,10 +38,11 @@
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
-		"tanstack": {
+		"io.github.vercel/next-devtools-mcp": {
 			"type": "stdio",
 			"command": "pnpx",
-			"args": ["@tanstack/cli@latest", "mcp"]
+			"args": ["next-devtools-mcp@latest"],
+			"gallery": "https://api.mcp.github.com"
 		}
 	},
 	"inputs": [
