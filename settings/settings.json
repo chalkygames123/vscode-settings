@@ -22,16 +22,10 @@
 	"editor.autoClosingOvertype": "always",
 	"editor.autoIndent": "advanced",
 	"editor.codeActionsOnSave": [
-		"source.fixAll.ts",
-		"source.fixAll.eslint",
-		"source.fixAll.stylelint",
-		"source.fixAll.biome",
-		"source.fixAll.oxc",
 		"source.organizeImports.ts",
-		"source.organizeImports.biome",
-		"source.action.useSortedAttributes.biome",
-		"source.action.useSortedKeys.biome",
-		"source.action.useSortedProperties.biome"
+		"source.format.oxc",
+		"source.fixAll.ts",
+		"source.fixAllDangerous.oxc"
 	],
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.find.cursorMoveOnType": false,
