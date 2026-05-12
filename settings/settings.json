@@ -87,6 +87,9 @@
 	"js/ts.preferences.autoImportSpecifierExcludeRegexes": ["^console$"],
 	"js/ts.preferences.preferTypeOnlyAutoImports": true,
 	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"json.schemaDownload.trustedDomains": {
+		"https://inlang.com/": true
+	},
 	"keyboard.dispatch": "keyCode",
 	"oxc.fixKind": "all",
 	"prettier.singleQuote": true,
