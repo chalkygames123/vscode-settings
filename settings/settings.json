@@ -70,6 +70,7 @@
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.responsesApi.toolSearchTool.enabled": true,
 	"github.copilot.chat.searchSubagent.enabled": true,
+	"github.copilot.chat.skillTool.enabled": true,
 	"github.copilot.chat.tools.memory.enabled": false,
 	"github.copilot.enable": {
 		"plaintext": true,
