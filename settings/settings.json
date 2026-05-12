@@ -66,6 +66,26 @@
 	"git.mergeEditor": true,
 	"git.pruneOnFetch": true,
 	"git.verboseCommit": true,
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"text": "Write commit messages in English using Markdown formatting, and adhere to the Conventional Commits specification."
+		},
+		{
+			"text": "Use the imperative mood and omit articles (e.g., a, an, the) in the subject line."
+		},
+		{
+			"text": "Include the project name in the scope for project-specific changes."
+		},
+		{
+			"text": "For changes that involve dependency updates, prepend `deps, ` to the scope."
+		},
+		{
+			"text": "When using the `fix` or `feat` types, consider the stakeholders' perspectives: end users for app changes, consumers for package changes, and developers for service changes."
+		},
+		{
+			"text": "Do not insert newlines in the middle of paragraphs; assume there are no line-length limits."
+		}
+	],
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.responsesApi.toolSearchTool.enabled": true,
