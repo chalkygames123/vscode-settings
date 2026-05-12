@@ -73,8 +73,8 @@
 	"github.copilot.chat.skillTool.enabled": true,
 	"github.copilot.chat.tools.memory.enabled": false,
 	"github.copilot.enable": {
-		"plaintext": true,
 		"markdown": true,
+		"plaintext": true,
 		"scminput": true
 	},
 	"inlineChat.enableV2": true,
