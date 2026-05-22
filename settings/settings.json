@@ -8,7 +8,6 @@
 		".claude/skills": false,
 		"~/.claude/skills": false
 	},
-	"chat.experimental.incrementalRendering.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
 	"chat.useCustomAgentHooks": true,
