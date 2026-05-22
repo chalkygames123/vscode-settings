@@ -10,10 +10,6 @@
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
-		"drawio": {
-			"type": "http",
-			"url": "https://mcp.draw.io/mcp"
-		},
 		"heroui-react": {
 			"type": "stdio",
 			"command": "pnpx",
