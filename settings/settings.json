@@ -96,7 +96,6 @@
 		"plaintext": true,
 		"scminput": true
 	},
-	"inlineChat.enableV2": true,
 	"js/ts.inlayHints.enumMemberValues.enabled": true,
 	"js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
 	"js/ts.inlayHints.parameterNames.enabled": "all",
