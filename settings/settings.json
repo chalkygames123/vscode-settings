@@ -1,4 +1,7 @@
 {
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.agentSkillsLocations": {
