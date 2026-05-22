@@ -10,6 +10,12 @@
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
+		"heroui-pro": {
+			"url": "https://mcp.heroui.pro/mcp",
+			"headers": {
+				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
+			}
+		},
 		"heroui-react": {
 			"type": "stdio",
 			"command": "pnx",
@@ -32,6 +38,12 @@
 		}
 	},
 	"inputs": [
+		{
+			"id": "HEROUI_PERSONAL_TOKEN",
+			"type": "promptString",
+			"description": "Your HeroUI Personal Token",
+			"password": true
+		},
 		{
 			"id": "SENTRY_ACCESS_TOKEN",
 			"type": "promptString",
