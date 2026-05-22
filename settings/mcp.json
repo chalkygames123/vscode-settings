@@ -12,12 +12,12 @@
 		},
 		"heroui-react": {
 			"type": "stdio",
-			"command": "pnpx",
+			"command": "pnx",
 			"args": ["@heroui/react-mcp@latest"]
 		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
-			"command": "pnpx",
+			"command": "pnx",
 			"args": ["@sentry/mcp-server@latest"],
 			"env": {
 				"SENTRY_ACCESS_TOKEN": "${input:SENTRY_ACCESS_TOKEN}"
@@ -26,7 +26,7 @@
 		},
 		"io.github.vercel/next-devtools-mcp": {
 			"type": "stdio",
-			"command": "pnpx",
+			"command": "pnx",
 			"args": ["next-devtools-mcp@latest"],
 			"gallery": "https://api.mcp.github.com"
 		}
