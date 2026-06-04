@@ -94,7 +94,6 @@
 		"plaintext": true,
 		"scminput": true
 	},
-	"js/ts.experimental.useTsgo": true,
 	"js/ts.inlayHints.enumMemberValues.enabled": true,
 	"js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
 	"js/ts.inlayHints.parameterNames.enabled": "all",
