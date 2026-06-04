@@ -39,9 +39,6 @@
 	"editor.minimap.showSlider": "always",
 	"editor.occurrencesHighlight": "multiFile",
 	"editor.parameterHints.enabled": false,
-	"editor.quickSuggestions": {
-		"other": "off"
-	},
 	"editor.renderWhitespace": "all",
 	"editor.snippetSuggestions": "bottom",
 	"editor.suggest.insertMode": "replace",
