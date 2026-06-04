@@ -9,6 +9,7 @@
 		"~/.claude/skills": false
 	},
 	"chat.mcp.gallery.enabled": true,
+	"chat.sessionSync.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.hideUnchangedRegions.enabled": true,
