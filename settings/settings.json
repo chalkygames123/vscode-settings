@@ -90,6 +90,7 @@
 	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.responsesApi.toolSearchTool.enabled": true,
+	"github.copilot.chat.localIndex.enabled": true,
 	"github.copilot.chat.searchSubagent.enabled": true,
 	"github.copilot.chat.skillTool.enabled": true,
 	"github.copilot.enable": {
