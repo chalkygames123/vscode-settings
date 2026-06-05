@@ -66,22 +66,22 @@
 	"git.verboseCommit": true,
 	"github.copilot.chat.commitMessageGeneration.instructions": [
 		{
-			"text": "Write commit messages in English using Markdown formatting, and adhere to the Conventional Commits specification."
+			"text": "Use English and Markdown formatting."
 		},
 		{
-			"text": "Use the imperative mood and omit articles (e.g., a, an, the) in the subject line."
+			"text": "In the subject line, use the imperative mood and omit articles where possible, such as a, an, and the."
 		},
 		{
-			"text": "Include the project name in the scope for project-specific changes."
+			"text": "In the body, do not insert line breaks within paragraphs, to keep the text friendly for machine translation; assume there is no line length limit."
 		},
 		{
-			"text": "For changes that involve dependency updates, prepend `deps, ` to the scope."
+			"text": "Follow the Conventional Commits specification."
 		},
 		{
-			"text": "When using the `fix` or `feat` types, consider the stakeholders' perspectives: end users for app changes, consumers for package changes, and developers for service changes."
+			"text": "In a monorepo, include the names of affected projects in the commit scope, separated by commas and spaces. For changes involving dependencies, include deps as the first item. If the change is workspace-wide, omit all other scope items and keep deps only."
 		},
 		{
-			"text": "Do not insert newlines in the middle of paragraphs; assume there are no line-length limits."
+			"text": "For project code changes, choose the commit type from the perspective of each project's primary stakeholders: end users for app changes, consumers for package changes, and developers for service changes."
 		}
 	],
 	"github.copilot.chat.languageContext.typescript.enabled": true,
