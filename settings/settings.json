@@ -59,6 +59,7 @@
 	"files.readonlyInclude": {
 		"**/node_modules/**": true
 	},
+	"files.simpleDialog.enable": true,
 	"git.autofetch": "all",
 	"git.closeDiffOnOperation": true,
 	"git.diagnosticsCommitHook.enabled": true,
