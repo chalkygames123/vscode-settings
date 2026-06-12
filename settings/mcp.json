@@ -1,5 +1,9 @@
 {
 	"servers": {
+		"astro-docs": {
+			"type": "http",
+			"url": "https://mcp.docs.astro.build/mcp"
+		},
 		"com.figma.mcp/mcp": {
 			"type": "http",
 			"url": "https://mcp.figma.com/mcp",
@@ -11,6 +15,7 @@
 			"gallery": "https://api.mcp.github.com"
 		},
 		"heroui-pro": {
+			"type": "http",
 			"url": "https://mcp.heroui.pro/mcp",
 			"headers": {
 				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
