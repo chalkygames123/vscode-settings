@@ -62,11 +62,6 @@
 		"when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasNotebookAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook' || editorFocus && inlineChatHasNotebookInline && inlineChatPossible && !editorReadonly && !editorSimpleInput && activeEditor == 'workbench.editor.notebook"
 	},
 	{
-		"key": "shift+cmd+e",
-		"command": "-pgsql.runQuery",
-		"when": "editorTextFocus && editorLangId == 'sql'"
-	},
-	{
 		"key": "ctrl+k g",
 		"command": "-textPowerTools.filterLinesIncludingString",
 		"when": "editorTextFocus"
