@@ -1,0 +1,5 @@
+---
+applyTo: '**'
+---
+
+この環境の Node.js ランタイムは pnpm 11 の `pnpm runtime set node …` でインストールされており、`npm` と `npx` はバンドルされていません。代わりに `pnpm` と `pnx` を使用してください。
