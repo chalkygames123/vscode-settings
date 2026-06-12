@@ -2,6 +2,7 @@
 	"[astro]": {
 		"editor.defaultFormatter": "astro-build.astro-vscode"
 	},
+	"biome.requireConfiguration": true,
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinkingStyle": "collapsedPreview",
 	"chat.agentSkillsLocations": {
