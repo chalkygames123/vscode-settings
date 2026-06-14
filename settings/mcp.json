@@ -1,6 +1,18 @@
 {
 	"servers": {
-		"astro-docs": {
+		"@heroui-pro/react-mcp": {
+			"headers": {
+				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
+			},
+			"type": "http",
+			"url": "https://mcp.heroui.pro/mcp"
+		},
+		"@heroui/react-mcp": {
+			"args": ["@heroui/react-mcp@latest"],
+			"command": "pnx",
+			"type": "stdio"
+		},
+		"Astro Docs server": {
 			"type": "http",
 			"url": "https://mcp.docs.astro.build/mcp"
 		},
@@ -13,18 +25,6 @@
 			"type": "http",
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
-		},
-		"heroui-pro": {
-			"type": "http",
-			"url": "https://mcp.heroui.pro/mcp",
-			"headers": {
-				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
-			}
-		},
-		"heroui-react": {
-			"type": "stdio",
-			"command": "pnx",
-			"args": ["@heroui/react-mcp@latest"]
 		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
