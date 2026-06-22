@@ -12,6 +12,10 @@
 			"command": "pnx",
 			"type": "stdio"
 		},
+		"Airbyte": {
+			"type": "http",
+			"url": "https://mcp.airbyte.ai/mcp"
+		},
 		"Astro Docs server": {
 			"type": "http",
 			"url": "https://mcp.docs.astro.build/mcp"
