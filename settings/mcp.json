@@ -44,6 +44,10 @@
 			"command": "pnx",
 			"args": ["next-devtools-mcp@latest"],
 			"gallery": "https://api.mcp.github.com"
+		},
+		"mdn": {
+			"type": "http",
+			"url": "https://mcp.mdn.mozilla.net/"
 		}
 	},
 	"inputs": [
