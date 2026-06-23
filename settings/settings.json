@@ -81,10 +81,10 @@
 			"text": "Follow the Conventional Commits specification."
 		},
 		{
-			"text": "In a monorepo, include the names of affected projects in the commit scope, separated by commas and spaces. For changes involving dependencies, include deps as the first item. If the change is workspace-wide, omit all other scope items and keep deps only."
+			"text": "Choose the commit type from the perspective of each project's primary stakeholders: end users for apps, consumers for packages or services."
 		},
 		{
-			"text": "For project code changes, choose the commit type from the perspective of each project's primary stakeholders: end users for app changes, consumers for package changes, and developers for service changes."
+			"text": "In a monorepo, include the names of affected projects in the commit scope, separated by commas and spaces. For changes involving dependencies, include `deps` as the first item. If the change is workspace-wide, omit all other scope items and keep `deps` only."
 		}
 	],
 	"github.copilot.chat.languageContext.typescript.enabled": true,
