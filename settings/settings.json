@@ -91,7 +91,6 @@
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.localIndex.enabled": true,
 	"github.copilot.chat.searchSubagent.enabled": true,
-	"github.copilot.chat.skillTool.enabled": true,
 	"github.copilot.enable": {
 		"markdown": true,
 		"plaintext": true,
