@@ -107,7 +107,15 @@
 	"js/ts.preferences.preferTypeOnlyAutoImports": true,
 	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
 	"json.schemaDownload.trustedDomains": {
-		"https://inlang.com/": true
+		"https://schemastore.azurewebsites.net/": true,
+		"https://raw.githubusercontent.com/microsoft/vscode/": true,
+		"https://raw.githubusercontent.com/devcontainers/spec/": true,
+		"https://www.schemastore.org/": true,
+		"https://json.schemastore.org/": true,
+		"https://json-schema.org/": true,
+		"https://developer.microsoft.com/json-schemas/": true,
+		"https://inlang.com/": true,
+		"https://pg-language-server.com": true
 	},
 	"keyboard.dispatch": "keyCode",
 	"oxc.fixKind": "all",
