@@ -11,7 +11,6 @@
 	},
 	"chat.mcp.gallery.enabled": true,
 	"chat.permissions.default": "autopilot",
-	"chat.plugins.marketplaces": ["ChromeDevTools/chrome-devtools-mcp"],
 	"chat.sessionSync.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
 	"diffEditor.experimental.showMoves": true,
