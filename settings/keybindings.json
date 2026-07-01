@@ -107,6 +107,10 @@
 		"command": "workbench.action.tasks.test"
 	},
 	{
+		"key": "shift+alt+cmd+b",
+		"command": "workbench.action.toggleMaximizedAuxiliaryBar"
+	},
+	{
 		"key": "ctrl+cmd+j",
 		"command": "workbench.action.toggleMaximizedPanel"
 	},
