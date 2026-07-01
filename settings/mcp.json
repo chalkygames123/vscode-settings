@@ -31,6 +31,12 @@
 			"command": "/Users/takuya.fukuju/Library/Application Support/GitKrakenCLI/gk-alpha",
 			"args": ["mcp", "--host=vscode-insiders", "--session=kepler"]
 		},
+		"io.github.ChromeDevTools/chrome-devtools-mcp": {
+			"type": "stdio",
+			"command": "pnpx",
+			"args": ["chrome-devtools-mcp@latest"],
+			"gallery": "https://api.mcp.github.com"
+		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
 			"command": "pnx",
