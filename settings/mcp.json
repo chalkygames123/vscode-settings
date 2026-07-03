@@ -26,6 +26,10 @@
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
+		"github": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/"
+		},
 		"GitKraken": {
 			"type": "stdio",
 			"command": "/Users/takuya.fukuju/Library/Application Support/GitKrakenCLI/gk-alpha",
