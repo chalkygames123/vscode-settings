@@ -30,11 +30,6 @@
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp/"
 		},
-		"GitKraken": {
-			"type": "stdio",
-			"command": "/Users/takuya.fukuju/Library/Application Support/GitKrakenCLI/gk-alpha",
-			"args": ["mcp", "--host=vscode-insiders", "--session=kepler"]
-		},
 		"io.github.ChromeDevTools/chrome-devtools-mcp": {
 			"type": "stdio",
 			"command": "pnpx",
