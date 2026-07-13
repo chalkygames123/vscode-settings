@@ -146,5 +146,13 @@
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"workbench.settings.enableNaturalLanguageSearch": false,
 	"workbench.settings.openDefaultSettings": true,
-	"workbench.startupEditor": "none"
+	"workbench.startupEditor": "none",
+	"yaml.disableSchemaDetection": [
+		"**/.github/workflows/*.yml",
+		"**/.github/workflows/*.yaml",
+		"**/.gitea/workflows/*.yml",
+		"**/.gitea/workflows/*.yaml",
+		"**/.forgejo/workflows/*.yml",
+		"**/.forgejo/workflows/*.yaml"
+	]
 }
