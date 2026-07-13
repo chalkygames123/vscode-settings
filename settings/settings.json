@@ -95,6 +95,7 @@
 		"plaintext": true,
 		"scminput": true
 	},
+	"gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash",
 	"js/ts.inlayHints.enumMemberValues.enabled": true,
 	"js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
 	"js/ts.inlayHints.parameterNames.enabled": "all",
