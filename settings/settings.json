@@ -123,6 +123,7 @@
 	"scm.repositories.explorer": true,
 	"scm.repositories.selectionMode": "single",
 	"search.showLineNumbers": true,
+	"sherlock.userId": "e0d74361-35b8-449c-8728-0ee15cacdaf5",
 	"terminal.explorerKind": "external",
 	"terminal.external.osxExec": "Warp.app",
 	"terminal.sourceControlRepositoriesKind": "external",
