@@ -40,7 +40,6 @@
 	"editor.maxTokenizationLineLength": 1000,
 	"editor.minimap.showSlider": "always",
 	"editor.occurrencesHighlight": "multiFile",
-	"editor.parameterHints.enabled": false,
 	"editor.renderWhitespace": "all",
 	"editor.snippetSuggestions": "bottom",
 	"editor.suggest.insertMode": "replace",
