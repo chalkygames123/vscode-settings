@@ -18,13 +18,11 @@
 		},
 		"com.figma.mcp/mcp": {
 			"type": "http",
-			"url": "https://mcp.figma.com/mcp",
-			"gallery": "https://api.mcp.github.com"
+			"url": "https://mcp.figma.com/mcp"
 		},
 		"com.supabase/mcp": {
 			"type": "http",
-			"url": "https://mcp.supabase.com/mcp",
-			"gallery": "https://api.mcp.github.com"
+			"url": "https://mcp.supabase.com/mcp"
 		},
 		"firecrawl-fastmcp": {
 			"type": "http",
@@ -37,8 +35,7 @@
 		"io.github.ChromeDevTools/chrome-devtools-mcp": {
 			"type": "stdio",
 			"command": "pnpx",
-			"args": ["chrome-devtools-mcp@latest"],
-			"gallery": "https://api.mcp.github.com"
+			"args": ["chrome-devtools-mcp@latest"]
 		},
 		"io.github.getsentry/sentry-mcp": {
 			"type": "stdio",
@@ -46,14 +43,12 @@
 			"args": ["@sentry/mcp-server@latest"],
 			"env": {
 				"SENTRY_ACCESS_TOKEN": "${input:SENTRY_ACCESS_TOKEN}"
-			},
-			"gallery": "https://api.mcp.github.com"
+			}
 		},
 		"io.github.vercel/next-devtools-mcp": {
 			"type": "stdio",
 			"command": "pnx",
-			"args": ["next-devtools-mcp@latest"],
-			"gallery": "https://api.mcp.github.com"
+			"args": ["next-devtools-mcp@latest"]
 		},
 		"mdn": {
 			"type": "http",
