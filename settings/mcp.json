@@ -59,13 +59,13 @@
 		{
 			"id": "HEROUI_PERSONAL_TOKEN",
 			"type": "promptString",
-			"description": "Your HeroUI Personal Token",
+			"description": "Enter your HeroUI Pro Personal Token",
 			"password": true
 		},
 		{
 			"id": "SENTRY_ACCESS_TOKEN",
 			"type": "promptString",
-			"description": "Your Sentry user authentication token",
+			"description": "Enter your Sentry personal token",
 			"password": true
 		}
 	]
