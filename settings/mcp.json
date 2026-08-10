@@ -26,6 +26,10 @@
 			"url": "https://mcp.supabase.com/mcp",
 			"gallery": "https://api.mcp.github.com"
 		},
+		"firecrawl-fastmcp": {
+			"type": "http",
+			"url": "https://mcp.firecrawl.dev/v2/mcp-oauth"
+		},
 		"github": {
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp/"
