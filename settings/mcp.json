@@ -1,43 +1,43 @@
 {
 	"servers": {
-		"@heroui-pro/react-mcp": {
+		"HeroUI Pro React": {
 			"type": "http",
 			"url": "https://mcp.heroui.pro/mcp",
 			"headers": {
 				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
 			}
 		},
-		"@heroui/react-mcp": {
+		"HeroUI React": {
 			"type": "stdio",
 			"command": "pnx",
 			"args": ["@heroui/react-mcp@latest"]
 		},
-		"Astro Docs server": {
+		"Astro Docs": {
 			"type": "http",
 			"url": "https://mcp.docs.astro.build/mcp"
 		},
-		"com.figma.mcp/mcp": {
+		"Figma": {
 			"type": "http",
 			"url": "https://mcp.figma.com/mcp"
 		},
-		"com.supabase/mcp": {
+		"Supabase": {
 			"type": "http",
 			"url": "https://mcp.supabase.com/mcp"
 		},
-		"firecrawl-fastmcp": {
+		"Firecrawl": {
 			"type": "http",
 			"url": "https://mcp.firecrawl.dev/v2/mcp-oauth"
 		},
-		"github": {
+		"GitHub": {
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp/"
 		},
-		"io.github.ChromeDevTools/chrome-devtools-mcp": {
+		"Chrome DevTools": {
 			"type": "stdio",
 			"command": "pnpx",
 			"args": ["chrome-devtools-mcp@latest"]
 		},
-		"io.github.getsentry/sentry-mcp": {
+		"Sentry": {
 			"type": "stdio",
 			"command": "pnx",
 			"args": ["@sentry/mcp-server@latest"],
@@ -45,12 +45,12 @@
 				"SENTRY_ACCESS_TOKEN": "${input:SENTRY_ACCESS_TOKEN}"
 			}
 		},
-		"io.github.vercel/next-devtools-mcp": {
+		"Next.js DevTools": {
 			"type": "stdio",
 			"command": "pnx",
 			"args": ["next-devtools-mcp@latest"]
 		},
-		"mdn": {
+		"MDN": {
 			"type": "http",
 			"url": "https://mcp.mdn.mozilla.net/"
 		}
