@@ -94,7 +94,6 @@
 		"plaintext": true,
 		"scminput": true
 	},
-	"gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash",
 	"gitlens.ai.model": "gitkraken",
 	"gitlens.gitkraken.mcp.autoEnabled": false,
 	"js/ts.inlayHints.enumMemberValues.enabled": true,
