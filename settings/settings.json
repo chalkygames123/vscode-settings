@@ -9,7 +9,6 @@
 		".claude/skills": false,
 		"~/.claude/skills": false
 	},
-	"chat.mcp.gallery.enabled": true,
 	"chat.permissions.default": "autopilot",
 	"chat.sessionSync.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
