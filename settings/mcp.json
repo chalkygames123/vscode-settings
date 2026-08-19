@@ -9,6 +9,74 @@
 			"command": "pnpx",
 			"args": ["chrome-devtools-mcp@latest"]
 		},
+		"Cloudflare": {
+			"type": "http",
+			"url": "https://mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare AI Gateway": {
+			"type": "http",
+			"url": "https://ai-gateway.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Audit Logs": {
+			"type": "http",
+			"url": "https://auditlogs.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare AutoRAG": {
+			"type": "http",
+			"url": "https://autorag.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Blog": {
+			"type": "http",
+			"url": "https://blog.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Browser Run": {
+			"type": "http",
+			"url": "https://browser.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Container": {
+			"type": "http",
+			"url": "https://containers.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Demo Day": {
+			"type": "http",
+			"url": "https://demo-day.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Digital Experience Monitoring": {
+			"type": "http",
+			"url": "https://dex.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare DNS Analytics": {
+			"type": "http",
+			"url": "https://dns-analytics.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Documentation": {
+			"type": "http",
+			"url": "https://docs.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Logpush": {
+			"type": "http",
+			"url": "https://logs.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Observability": {
+			"type": "http",
+			"url": "https://observability.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare One CASB": {
+			"type": "http",
+			"url": "https://casb.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Radar": {
+			"type": "http",
+			"url": "https://radar.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Workers Bindings": {
+			"type": "http",
+			"url": "https://bindings.mcp.cloudflare.com/mcp"
+		},
+		"Cloudflare Workers Builds": {
+			"type": "http",
+			"url": "https://builds.mcp.cloudflare.com/mcp"
+		},
 		"Figma": {
 			"type": "http",
 			"url": "https://mcp.figma.com/mcp"
