@@ -110,6 +110,10 @@
 			"command": "pnx",
 			"args": ["next-devtools-mcp@latest"]
 		},
+		"React Aria": {
+			"command": "pnpx",
+			"args": ["@react-aria/mcp@latest"]
+		},
 		"Sentry": {
 			"type": "stdio",
 			"command": "pnx",
