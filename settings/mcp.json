@@ -6,7 +6,7 @@
 		},
 		"Chrome DevTools": {
 			"type": "stdio",
-			"command": "pnpx",
+			"command": "pnx",
 			"args": ["chrome-devtools-mcp@latest"]
 		},
 		"Cloudflare": {
@@ -111,7 +111,7 @@
 			"args": ["next-devtools-mcp@latest"]
 		},
 		"React Aria": {
-			"command": "pnpx",
+			"command": "pnx",
 			"args": ["@react-aria/mcp@latest"]
 		},
 		"Sentry": {
