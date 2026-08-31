@@ -9,6 +9,7 @@
 		".claude/skills": false,
 		"~/.claude/skills": false
 	},
+	"chat.experimental.stickyScroll.enabled": true,
 	"chat.permissions.default": "autopilot",
 	"chat.sessionSync.enabled": true,
 	"chat.subagents.allowInvocationsFromSubagents": true,
