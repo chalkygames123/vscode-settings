@@ -12,7 +12,6 @@
 	"chat.experimental.stickyScroll.enabled": true,
 	"chat.permissions.default": "autopilot",
 	"chat.sessionSync.enabled": true,
-	"chat.subagents.allowInvocationsFromSubagents": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.accessibilitySupport": "off",
