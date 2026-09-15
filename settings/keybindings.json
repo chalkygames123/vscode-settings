@@ -111,6 +111,10 @@
 		"command": "workbench.action.tasks.test"
 	},
 	{
+		"key": "cmd+k alt+cmd+m",
+		"command": "workbench.action.toggleEditorWidths"
+	},
+	{
 		"key": "shift+alt+cmd+b",
 		"command": "workbench.action.toggleMaximizedAuxiliaryBar"
 	},
