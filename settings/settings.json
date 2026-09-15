@@ -5,6 +5,7 @@
 	"biome.requireConfiguration": true,
 	"chat.agent.maxRequests": 128,
 	"chat.agent.thinkingStyle": "collapsedPreview",
+	"chat.agentHost.codexAgent.enabled": false,
 	"chat.agentSkillsLocations": {
 		".claude/skills": false,
 		"~/.claude/skills": false
