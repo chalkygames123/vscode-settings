@@ -128,6 +128,7 @@
 	"terminal.sourceControlRepositoriesKind": "external",
 	"window.autoDetectColorScheme": true,
 	"window.confirmBeforeClose": "keyboardOnly",
+	"window.density.layout": "compact",
 	"window.title": "${rootName}${separator}${activeFolderMedium}",
 	"workbench.browser.dataStorage": "workspace",
 	"workbench.browser.newTabPlacement": "window",
