@@ -38,6 +38,10 @@
 		"command": "editor.emmet.action.matchTag"
 	},
 	{
+		"key": "ctrl+shift+cmd+g",
+		"command": "gitlens.views.commitDetails.focus"
+	},
+	{
 		"key": "ctrl+cmd+g",
 		"command": "gitlens.views.graph.focus"
 	},
