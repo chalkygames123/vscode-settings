@@ -16,7 +16,7 @@
 			"type": "http",
 			"url": "https://api.githubcopilot.com/mcp"
 		},
-		"HeroUI Pro React": {
+		"HeroUI Pro": {
 			"type": "http",
 			"url": "https://mcp.heroui.pro/mcp",
 			"headers": {
