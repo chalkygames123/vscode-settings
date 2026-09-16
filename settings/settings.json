@@ -89,6 +89,7 @@
 		}
 	],
 	"github.copilot.chat.languageContext.typescript.enabled": true,
+	"github.copilot.chat.languageContext.typescript7.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.chat.localIndex.enabled": true,
 	"github.copilot.chat.searchSubagent.enabled": true,
