@@ -4,140 +4,51 @@
 			"type": "http",
 			"url": "https://mcp.docs.astro.build/mcp"
 		},
-		"Chrome DevTools": {
-			"type": "stdio",
-			"command": "pnx",
-			"args": ["chrome-devtools-mcp@latest"]
-		},
 		"Cloudflare": {
 			"type": "http",
-			"url": "https://mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare AI Gateway": {
-			"type": "http",
-			"url": "https://ai-gateway.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Audit Logs": {
-			"type": "http",
-			"url": "https://auditlogs.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare AutoRAG": {
-			"type": "http",
-			"url": "https://autorag.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Blog": {
-			"type": "http",
-			"url": "https://blog.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Browser Run": {
-			"type": "http",
-			"url": "https://browser.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Container": {
-			"type": "http",
-			"url": "https://containers.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Demo Day": {
-			"type": "http",
-			"url": "https://demo-day.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Digital Experience Monitoring": {
-			"type": "http",
-			"url": "https://dex.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare DNS Analytics": {
-			"type": "http",
-			"url": "https://dns-analytics.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Documentation": {
-			"type": "http",
-			"url": "https://docs.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Logpush": {
-			"type": "http",
-			"url": "https://logs.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Observability": {
-			"type": "http",
-			"url": "https://observability.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare One CASB": {
-			"type": "http",
-			"url": "https://casb.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Radar": {
-			"type": "http",
-			"url": "https://radar.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Workers Bindings": {
-			"type": "http",
-			"url": "https://bindings.mcp.cloudflare.com/mcp?codemode=search_and_execute"
-		},
-		"Cloudflare Workers Builds": {
-			"type": "http",
-			"url": "https://builds.mcp.cloudflare.com/mcp?codemode=search_and_execute"
+			"url": "https://mcp.cloudflare.com/mcp"
 		},
 		"Figma": {
 			"type": "http",
 			"url": "https://mcp.figma.com/mcp"
 		},
-		"Firecrawl": {
-			"type": "http",
-			"url": "https://mcp.firecrawl.dev/v2/mcp-oauth"
-		},
 		"GitHub": {
 			"type": "http",
-			"url": "https://api.githubcopilot.com/mcp/"
-		},
-		"HeroUI React": {
-			"type": "stdio",
-			"command": "pnx",
-			"args": ["@heroui/react-mcp@latest"]
+			"url": "https://api.githubcopilot.com/mcp"
 		},
 		"HeroUI Pro React": {
 			"type": "http",
 			"url": "https://mcp.heroui.pro/mcp",
 			"headers": {
-				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
+				"x-heroui-personal-token": "${input:HEROUI_PRO_PERSONAL_TOKEN}"
 			}
 		},
 		"MDN": {
 			"type": "http",
 			"url": "https://mcp.mdn.mozilla.net/"
 		},
-		"Next.js DevTools": {
-			"type": "stdio",
-			"command": "pnx",
-			"args": ["next-devtools-mcp@latest"]
-		},
 		"React Aria": {
 			"command": "pnx",
 			"args": ["@react-aria/mcp@latest"]
 		},
 		"Sentry": {
-			"type": "stdio",
-			"command": "pnx",
-			"args": ["@sentry/mcp-server@latest"],
-			"env": {
-				"SENTRY_ACCESS_TOKEN": "${input:SENTRY_ACCESS_TOKEN}"
-			}
-		},
-		"Supabase": {
 			"type": "http",
-			"url": "https://mcp.supabase.com/mcp"
+			"url": "https://mcp.sentry.dev/mcp"
+		},
+		"Supabase (local)": {
+			"type": "http",
+			"url": "http://localhost:54321/mcp"
+		},
+		"Supabase (remote)": {
+			"type": "http",
+			"url": "https://mcp.supabase.com/mcp?features=docs%2Caccount%2Cdatabase%2Cdebugging%2Cdevelopment%2Cfunctions%2Cbranching"
 		}
 	},
 	"inputs": [
 		{
-			"id": "HEROUI_PERSONAL_TOKEN",
 			"type": "promptString",
-			"description": "Enter your HeroUI Pro Personal Token",
-			"password": true
-		},
-		{
-			"id": "SENTRY_ACCESS_TOKEN",
-			"type": "promptString",
-			"description": "Enter your Sentry personal token",
+			"id": "HEROUI_PRO_PERSONAL_TOKEN",
+			"description": "HeroUI Pro Personal Token",
 			"password": true
 		}
 	]
