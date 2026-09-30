@@ -1,5 +1,10 @@
 {
 	"servers": {
+		"Ambient Context": {
+			"type": "stdio",
+			"command": "/Applications/Ambient Context.app/Contents/MacOS/ambient-context",
+			"args": ["mcp"]
+		},
 		"Astro Docs": {
 			"type": "http",
 			"url": "https://mcp.docs.astro.build/mcp"
