@@ -76,6 +76,11 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "cmd+backspace",
+		"command": "-workbench.action.chat.restoreCheckpoint",
+		"when": "inChat && !chatIsReadonly && !inChatQuestionCarousel && !textInputFocus"
+	},
+	{
 		"key": "ctrl+cmd+w",
 		"command": "workbench.action.closeEditorsToTheRight"
 	},
