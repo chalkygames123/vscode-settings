@@ -28,5 +28,22 @@
 		],
 		"description": "",
 		"icon": "tools"
+	},
+	"figma": {
+		"tools": [
+			"figma-(remote)/download_assets",
+			"figma-(remote)/get_design_context",
+			"figma-(remote)/get_figma_skill",
+			"figma-(remote)/get_libraries",
+			"figma-(remote)/get_metadata",
+			"figma-(remote)/get_screenshot",
+			"figma-(remote)/get_variable_defs",
+			"figma-(remote)/list_file_components_for_code_connect",
+			"figma-(remote)/search_design_system",
+			"figma-(remote)/send_code_connect_mappings",
+			"figma-(remote)/whoami"
+		],
+		"description": "",
+		"icon": "tools"
 	}
 }
