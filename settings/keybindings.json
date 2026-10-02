@@ -80,6 +80,10 @@
 		"command": "workbench.action.chat.configureTools"
 	},
 	{
+		"key": "ctrl+alt+cmd+.",
+		"command": "workbench.action.chat.manage"
+	},
+	{
 		"key": "cmd+backspace",
 		"command": "-workbench.action.chat.restoreCheckpoint",
 		"when": "inChat && !chatIsReadonly && !inChatQuestionCarousel && !textInputFocus"
