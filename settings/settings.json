@@ -8,6 +8,9 @@
 	"biome.requireConfiguration": true,
 	"chat.agentHost.codexAgent.enabled": false,
 	"chat.experimental.stickyScroll.enabled": true,
+	"chat.mcp.discovery.enabled": {
+		"copilot": true
+	},
 	"chat.permissions.default": "autopilot",
 	"chat.sessionSync.enabled": true,
 	"diffEditor.experimental.showMoves": true,
