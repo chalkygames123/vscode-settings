@@ -1,19 +1,20 @@
 {
 	"servers": {
-		"HeroUI Pro": {
+		"heroui-pro": {
 			"type": "http",
 			"url": "https://mcp.heroui.pro/mcp",
 			"headers": {
-				"x-heroui-personal-token": "${input:HEROUI_PRO_PERSONAL_TOKEN}"
-			}
+				"x-heroui-personal-token": "${input:HEROUI_PERSONAL_TOKEN}"
+			},
+			"tools": ["*"]
 		}
 	},
 	"inputs": [
 		{
-			"type": "promptString",
-			"id": "HEROUI_PRO_PERSONAL_TOKEN",
-			"description": "HeroUI Pro Personal Token",
-			"password": true
+			"type": "command",
+			"id": "HEROUI_PERSONAL_TOKEN",
+			"command": "op",
+			"args": ["run", "--env-file=\"$HOME/.copilot/.env\"", "--", "sh", "-c", "'echo \"$HEROUI_PERSONAL_TOKEN\"'"]
 		}
 	]
 }
