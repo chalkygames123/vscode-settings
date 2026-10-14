@@ -16,30 +16,22 @@
 	// 	"description": "Log output to console"
 	// }
 	"Log message at debug level": {
-		"body": [
-			"console.debug(`${new Date().toLocaleTimeString([])} [DEBUG]:`, ${1:$TM_SELECTED_TEXT});"
-		],
+		"body": ["console.debug(`${new Date().toLocaleTimeString([])} [DEBUG]:`, ${1:$TM_SELECTED_TEXT});"],
 		"prefix": "debug",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
 	"Log message at info level": {
-		"body": [
-			"console.info(t`${new Date().toLocaleTimeString([])} [INFO]:`, ${1:$TM_SELECTED_TEXT});"
-		],
+		"body": ["console.info(t`${new Date().toLocaleTimeString([])} [INFO]:`, ${1:$TM_SELECTED_TEXT});"],
 		"prefix": "info",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
 	"Log message at warning level": {
-		"body": [
-			"console.warn(t`${new Date().toLocaleTimeString([])} [WARNING]:`, ${1:$TM_SELECTED_TEXT});"
-		],
+		"body": ["console.warn(t`${new Date().toLocaleTimeString([])} [WARNING]:`, ${1:$TM_SELECTED_TEXT});"],
 		"prefix": "warn",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
 	"Log message at error level": {
-		"body": [
-			"console.error(`${new Date().toLocaleTimeString([])} [ERROR]:`, ${1:$TM_SELECTED_TEXT});"
-		],
+		"body": ["console.error(`${new Date().toLocaleTimeString([])} [ERROR]:`, ${1:$TM_SELECTED_TEXT});"],
 		"prefix": "error",
 		"scope": "javascript,javascriptreact,typescript,typescriptreact"
 	},
