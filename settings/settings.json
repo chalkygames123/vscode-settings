@@ -7,6 +7,10 @@
 	},
 	"biome.requireConfiguration": true,
 	"chat.agentHost.codexAgent.enabled": false,
+	"chat.defaultConfiguration": {
+		"mode": "autopilot",
+		"approvals": "allowAll"
+	},
 	"chat.experimental.stickyScroll.enabled": true,
 	"chat.mcp.discovery.enabled": {
 		"copilot": true
