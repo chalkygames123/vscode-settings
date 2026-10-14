@@ -87,7 +87,6 @@
 			"text": "In a monorepo, include the names of affected projects in the commit scope, separated by commas and spaces. For changes involving dependencies, include `deps` as the first item. If the change is workspace-wide, omit all other scope items and keep `deps` only."
 		}
 	],
-	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.chat.languageContext.typescript7.enabled": true,
 	"github.copilot.chat.localeOverride": "ja",
 	"github.copilot.enable": {
