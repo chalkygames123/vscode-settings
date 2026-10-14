@@ -80,6 +80,11 @@
 		"command": "workbench.action.chat.configureTools"
 	},
 	{
+		"key": "shift+cmd+t",
+		"command": "-workbench.action.chat.focusTodosView",
+		"when": "inChatInput && chatAgentKind == 'agent' || inChatTodoList && chatAgentKind == 'agent'"
+	},
+	{
 		"key": "ctrl+alt+cmd+.",
 		"command": "workbench.action.chat.manage"
 	},
