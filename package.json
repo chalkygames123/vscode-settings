@@ -1,0 +1,26 @@
+{
+	"name": "vscode-settings",
+	"type": "module",
+	"scripts": {
+		"check": "pnpm run fmt:check && pnpm run lint",
+		"check:fix": "pnpm run fmt && pnpm run lint:fix",
+		"fmt": "oxfmt",
+		"fmt:check": "oxfmt --check",
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix --fix-suggestions --fix-dangerously",
+		"test": "node --test",
+		"test:watch": "node --test --watch"
+	},
+	"dependencies": {
+		"jsonc-parser": "catalog:"
+	},
+	"devDependencies": {
+		"@stylistic/eslint-plugin": "catalog:",
+		"@types/node": "catalog:",
+		"globals": "catalog:",
+		"oxfmt": "catalog:",
+		"oxlint": "catalog:",
+		"oxlint-tsgolint": "catalog:",
+		"typescript": "catalog:"
+	}
+}

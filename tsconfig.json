@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		// Type Checking
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		// Modules
+		"allowImportingTsExtensions": true,
+		"module": "preserve",
+		"resolveJsonModule": true,
+		"types": ["node"],
+
+		// Emit
+		"noEmit": true,
+
+		// JavaScript Support
+		"allowJs": true,
+
+		// Interop Constraints
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true,
+
+		// Language and Environment
+		"lib": ["ESNext"],
+		"moduleDetection": "force",
+
+		// Completeness
+		"skipLibCheck": true
+	}
+}

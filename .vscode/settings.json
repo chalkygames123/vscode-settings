@@ -1,3 +1,26 @@
 {
-	"deno.enable": true
+	"[json]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"files.readonlyInclude": {
+		"pnpm-lock.yaml": true
+	},
+	"files.watcherExclude": {
+		"pnpm-lock.yaml": true
+	},
+	"search.exclude": {
+		"pnpm-lock.yaml": true
+	}
 }

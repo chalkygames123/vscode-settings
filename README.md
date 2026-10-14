@@ -58,3 +58,14 @@ To uninstall extensions not listed in the [`extensions`](./extensions) file, run
 
 - `-n`, `--dry-run`: Preview changes without applying them.
 - `-i`, `--insiders`: Use VS Code Insiders instead of stable VS Code.
+
+### Sorting keybindings
+
+With Node.js 24.2 or later and pnpm installed, install dependencies and run:
+
+```shell
+pnpm install
+node sort_keybindings.ts [path/to/keybindings.json]
+```
+
+The path defaults to `./settings/keybindings.json`, relative to the current working directory. The script sorts entries by command, places disabled commands (`-command`) before their enabled counterparts, and preserves entry comments. It overwrites the input file.

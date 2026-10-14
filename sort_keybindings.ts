@@ -1,12 +1,15 @@
-#!/usr/bin/env -S deno run --allow-read --allow-write
+#!/usr/bin/env node
 
-import { parse } from "jsr:@std/jsonc";
+import { readFile, writeFile } from 'node:fs/promises';
+import process from 'node:process';
+
+import { parse, printParseErrorCode, type ParseError } from 'jsonc-parser';
 
 // Constants for consistent formatting
 const INDENTATION = {
-	COMMENT: "\t",
-	OBJECT_BRACE: "\t",
-	PROPERTY: "\t\t",
+	COMMENT: '\t',
+	OBJECT_BRACE: '\t',
+	PROPERTY: '\t\t',
 } as const;
 
 const REGEX_PATTERNS = {
@@ -32,7 +35,7 @@ interface ProcessingStats {
  * Extracts the content before the keybindings array
  */
 function extractBeforeArrayContent(content: string): string {
-	return content.match(REGEX_PATTERNS.BEFORE_ARRAY)?.[0] || "";
+	return content.match(REGEX_PATTERNS.BEFORE_ARRAY)?.[0] || '';
 }
 
 /**
@@ -42,10 +45,10 @@ function extractArrayContent(content: string): string {
 	const arrayMatch = content.match(REGEX_PATTERNS.ARRAY_CONTENT);
 
 	if (!arrayMatch) {
-		throw new Error("No keybindings array found");
+		throw new Error('No keybindings array found');
 	}
 
-	return arrayMatch[1];
+	return arrayMatch[1] ?? '';
 }
 
 /**
@@ -53,22 +56,36 @@ function extractArrayContent(content: string): string {
  */
 function parseKeybindingEntries(arrayContent: string): KeybindingEntry[] {
 	const entries: KeybindingEntry[] = [];
+
 	let match;
 
 	while ((match = REGEX_PATTERNS.ENTRY.exec(arrayContent)) !== null) {
-		const [, comments, objectText] = match;
+		const [, comments = '', objectText = ''] = match;
 
-		try {
-			const obj = parse(objectText) as Record<string, unknown>;
-			const command = String(obj.command || "");
+		const errors: ParseError[] = [];
 
-			entries.push({
-				text: (comments + objectText).trim(),
-				command,
-			});
-		} catch {
-			// Skip invalid entries
+		const obj: unknown = parse(objectText, errors, { allowTrailingComma: true });
+
+		const firstError = errors[0];
+
+		if (firstError) {
+			throw new Error(`Invalid keybinding: ${printParseErrorCode(firstError.error)} at offset ${firstError.offset}`);
 		}
+
+		if (typeof obj !== 'object' || obj === null) {
+			throw new Error('Invalid keybinding: expected an object');
+		}
+
+		const command = 'command' in obj ? obj.command : '';
+
+		if (typeof command !== 'string') {
+			throw new Error('Invalid keybinding: command must be a string');
+		}
+
+		entries.push({
+			text: (comments + objectText).trim(),
+			command,
+		});
 	}
 
 	return entries;
@@ -77,17 +94,24 @@ function parseKeybindingEntries(arrayContent: string): KeybindingEntry[] {
 /**
  * Compares two keybinding commands for sorting
  */
-function compareKeybindingCommands(
-	a: KeybindingEntry,
-	b: KeybindingEntry
-): number {
-	const baseA = a.command.startsWith("-") ? a.command.slice(1) : a.command;
-	const baseB = b.command.startsWith("-") ? b.command.slice(1) : b.command;
+function compareKeybindingCommands(a: KeybindingEntry, b: KeybindingEntry): number {
+	const baseA = a.command.startsWith('-') ? a.command.slice(1) : a.command;
+
+	const baseB = b.command.startsWith('-') ? b.command.slice(1) : b.command;
+
 	const baseComparison = baseA.localeCompare(baseB);
 
-	if (baseComparison !== 0) return baseComparison;
-	if (a.command.startsWith("-") && !b.command.startsWith("-")) return -1;
-	if (!a.command.startsWith("-") && b.command.startsWith("-")) return 1;
+	if (baseComparison !== 0) {
+		return baseComparison;
+	}
+
+	if (a.command.startsWith('-') && !b.command.startsWith('-')) {
+		return -1;
+	}
+
+	if (!a.command.startsWith('-') && b.command.startsWith('-')) {
+		return 1;
+	}
 
 	return 0;
 }
@@ -98,13 +122,15 @@ function compareKeybindingCommands(
 function applyIndentation(line: string): string {
 	const trimmed = line.trim();
 
-	if (!trimmed) return "";
+	if (!trimmed) {
+		return '';
+	}
 
-	if (trimmed.startsWith("//") || trimmed.startsWith("/*")) {
+	if (trimmed.startsWith('//') || trimmed.startsWith('/*')) {
 		return `${INDENTATION.COMMENT}${trimmed}`;
 	}
 
-	if (trimmed === "{" || trimmed === "}") {
+	if (trimmed === '{' || trimmed === '}') {
 		return `${INDENTATION.OBJECT_BRACE}${trimmed}`;
 	}
 
@@ -115,10 +141,11 @@ function applyIndentation(line: string): string {
  * Normalizes indentation for a keybinding entry
  */
 function normalizeEntryIndentation(entry: KeybindingEntry): string {
-	const lines = entry.text.split("\n");
+	const lines = entry.text.split('\n');
+
 	const normalizedLines = lines.map(applyIndentation);
 
-	return normalizedLines.join("\n");
+	return normalizedLines.join('\n');
 }
 
 /**
@@ -126,6 +153,7 @@ function normalizeEntryIndentation(entry: KeybindingEntry): string {
  */
 function calculateStats(content: string): ProcessingStats {
 	const entryCount = (content.match(REGEX_PATTERNS.OBJECTS) || []).length;
+
 	const commentCount = (content.match(REGEX_PATTERNS.COMMENTS) || []).length;
 
 	return { entryCount, commentCount };
@@ -140,6 +168,7 @@ function sortKeybindingsWithComments(content: string): string {
 
 	// Extract and parse keybinding entries
 	const arrayContent = extractArrayContent(content);
+
 	const entries = parseKeybindingEntries(arrayContent);
 
 	// Sort entries by command
@@ -149,9 +178,10 @@ function sortKeybindingsWithComments(content: string): string {
 	const sortedEntries = entries
 		.map((entry, i) => {
 			const normalized = normalizeEntryIndentation(entry);
+
 			return i < entries.length - 1 ? `${normalized},` : normalized;
 		})
-		.join("\n");
+		.join('\n');
 
 	return `${beforeArray}[\n${sortedEntries}\n]\n`;
 }
@@ -161,17 +191,16 @@ function sortKeybindingsWithComments(content: string): string {
  */
 async function sortKeybindings(filePath: string): Promise<void> {
 	try {
-		const content = await Deno.readTextFile(filePath);
+		const content = await readFile(filePath, 'utf8');
+
 		const sortedContent = sortKeybindingsWithComments(content);
 
-		await Deno.writeTextFile(filePath, sortedContent);
+		await writeFile(filePath, sortedContent, 'utf8');
 
 		// Calculate and report processing statistics
 		const stats = calculateStats(content);
 
-		console.log(
-			`✅ Successfully sorted ${stats.entryCount} keybindings by command property`
-		);
+		console.log(`✅ Successfully sorted ${stats.entryCount} keybindings by command property`);
 
 		if (stats.commentCount > 0) {
 			console.log(`💬 Preserved ${stats.commentCount} comments`);
@@ -179,15 +208,15 @@ async function sortKeybindings(filePath: string): Promise<void> {
 	} catch (error) {
 		const errorMessage = error instanceof Error ? error.message : String(error);
 
-		console.error("❌ Error sorting keybindings:", errorMessage);
+		console.error('❌ Error sorting keybindings:', errorMessage);
 
-		Deno.exit(1);
+		process.exitCode = 1;
 	}
 }
 
 // Main execution
 if (import.meta.main) {
-	const filePath = Deno.args[0] || "./settings/keybindings.json";
+	const filePath = process.argv[2] || './settings/keybindings.json';
 
 	await sortKeybindings(filePath);
 }

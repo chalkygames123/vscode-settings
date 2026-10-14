@@ -1,0 +1,23 @@
+catalog:
+  '@stylistic/eslint-plugin': 5.10.0
+  '@types/node': 26.6.5
+  globals: 17.13.0
+  jsonc-parser: 3.3.1
+  oxfmt: 0.72.0
+  oxlint: 1.87.0
+  oxlint-tsgolint: 7.0.2004
+  typescript: 7.0.2
+
+catalogMode: strict
+
+cleanupUnusedCatalogs: true
+
+minimumReleaseAge: 4320
+
+minimumReleaseAgeStrict: false
+
+saveExact: true
+
+trustPolicy: no-downgrade
+
+trustPolicyIgnoreAfter: 4320
