@@ -42,6 +42,7 @@
 	"editor.linkedEditing": true,
 	"editor.minimap.showSlider": "always",
 	"editor.occurrencesHighlight": "multiFile",
+	"editor.occurrencesHighlightFromAllProviders": true,
 	"editor.renderWhitespace": "all",
 	"editor.snippetSuggestions": "bottom",
 	"editor.suggest.insertMode": "replace",
