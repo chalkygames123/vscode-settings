@@ -8,6 +8,7 @@
 			"edit/editFiles",
 			"edit/rename",
 			"execute/createAndRunTask",
+			"execute/executionSubagent",
 			"execute/getTerminalOutput",
 			"execute/killTerminal",
 			"execute/runInTerminal",
