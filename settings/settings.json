@@ -7,6 +7,7 @@
 	},
 	"biome.requireConfiguration": true,
 	"chat.agentHost.codexAgent.enabled": false,
+	"chat.canvases.enabled": true,
 	"chat.defaultConfiguration": {
 		"mode": "autopilot",
 		"approvals": "allowAll"
