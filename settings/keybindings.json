@@ -81,10 +81,6 @@
 		"when": "inChatInput && chatAgentKind == 'agent' || inChatTodoList && chatAgentKind == 'agent'"
 	},
 	{
-		"key": "ctrl+alt+cmd+.",
-		"command": "workbench.action.chat.manage"
-	},
-	{
 		"key": "cmd+backspace",
 		"command": "-workbench.action.chat.restoreCheckpoint",
 		"when": "inChat && !chatIsReadonly && !inChatQuestionCarousel && !textInputFocus"
