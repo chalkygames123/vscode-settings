@@ -5,7 +5,6 @@
 	"[go]": {
 		"editor.defaultFormatter": "golang.go"
 	},
-	"biome.requireConfiguration": true,
 	"chat.agentHost.codexAgent.enabled": false,
 	"chat.canvases.enabled": true,
 	"chat.defaultConfiguration": {
