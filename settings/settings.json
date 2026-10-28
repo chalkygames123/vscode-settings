@@ -116,6 +116,7 @@
 		"https://pg-language-server.com": true
 	},
 	"keyboard.dispatch": "keyCode",
+	"multiDiffEditor.experimental.fileList": true,
 	"oxc.fixKind": "all",
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
