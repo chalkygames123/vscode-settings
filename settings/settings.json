@@ -7,6 +7,7 @@
 	},
 	"chat.agentHost.codexAgent.enabled": false,
 	"chat.agentHost.computerUse.enabled": true,
+	"chat.agentHost.moveChats.enabled": true,
 	"chat.canvases.enabled": true,
 	"chat.defaultConfiguration": {
 		"mode": "autopilot",
