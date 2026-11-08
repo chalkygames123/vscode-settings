@@ -11,7 +11,7 @@
 	"chat.canvases.enabled": true,
 	"chat.defaultConfiguration": {
 		"mode": "interactive",
-		"approvals": "assisted"
+		"approvals": "allowAll"
 	},
 	"chat.mcp.discovery.enabled": {
 		"copilot": true
