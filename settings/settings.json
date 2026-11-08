@@ -10,8 +10,8 @@
 	"chat.agentHost.moveChats.enabled": true,
 	"chat.canvases.enabled": true,
 	"chat.defaultConfiguration": {
-		"mode": "autopilot",
-		"approvals": "allowAll"
+		"mode": "interactive",
+		"approvals": "assisted"
 	},
 	"chat.mcp.discovery.enabled": {
 		"copilot": true
