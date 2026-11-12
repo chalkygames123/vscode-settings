@@ -18,7 +18,6 @@
 	},
 	"chat.permissions.default": "autopilot",
 	"chat.persistentProgressVerbosity": "verbose",
-	"chat.sessionSync.enabled": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.accessibilitySupport": "off",
